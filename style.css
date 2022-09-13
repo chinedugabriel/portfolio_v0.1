@@ -1,5 +1,5 @@
 body{
-    font-family: 'Quicksand', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #111111;
     color: white;
     position: relative;
@@ -10,7 +10,11 @@ body{
     margin: 0px;
 }
 section{
-    height: 100%;
+    height: 99vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 /* .divider starts here */
 section>div.divider-bg{
@@ -19,7 +23,7 @@ section>div.divider-bg{
     width: 100%;
     position: fixed;
     top: -50%;
-    left: -83%;
+    left: -85%;
     rotate: -15deg;
     z-index: -1;
     /* transform: rotate(-15deg); */
@@ -29,26 +33,27 @@ section>div.divider-bg{
 /* profile picture starts here */
 section>div.profile-picture{
     height: calc(100vh - 80px);
-    width: 33.33333333%;
-    background-image: url("img/chinedu_gabriel.jpg");
+    width: 27%;
+    background-image: url("img/chinedu_gabriel-white-preview.png");
     background-position: center;
-    background-color: red;
+    /* background-color: red; */
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
     z-index: 11;
     position: fixed;
     top: 40px;
-    left: 40px;
+    left: 55px;
+    /* display: none; */
 }
 /* profile picture ends here */
 
 /* div.mode-switch starts here */
 section>div.mode-switch{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: rgba(187, 187, 187, 0.3);
-    border-radius: 25px;
+    border-radius: 20px;
     position: fixed;
     top: 30px;
     right: 30px;
@@ -56,12 +61,200 @@ section>div.mode-switch{
     background-image: url("img/wb_sunny_icon.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30px;
+    background-size: 22px;
 }
 /* div.mode-switch ends here */
 
 /* nav starts here */
 section>div.nav{
+    border: 1px solid red;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    position: fixed;
+    right: 30px;
+    top: 30%;
+    /* height: 40%; */
+}
+
+section>div.nav>ul{
+    list-style: none;
+    height: 350px;
+    /* width: 200px; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+section>div.nav>ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(106, 199, 0);
+    background-color: #ffb400;
+    border-radius: 25px;
+    width: 150px;
+    padding-left: 10px;
+    text-align: center;
+
+}
+/* collective icon style */
+section>div.nav>ul>li>div{
+    height: 40px;
+    width: 40px ;
+    background-color: rgba(187, 187, 187, 0.3);
+    border-radius: 20px;
+    border: 1px solid rgb(106, 199, 0);
+}
+/* individual icon */
+section>div.nav>ul>li>div.icon1{
+    background-image: url("img/home_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+section>div.nav>ul>li>div.icon2{
+    background-image: url("img/user_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+section>div.nav>ul>li>div.icon3{
+    background-image: url("img/potfolio_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+section>div.nav>ul>li>div.icon4{
+    background-image: url("img/outgoing_mail_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 
 }
 /* nav ends here */
+
+/* div.row-home starts here */
+section>div.row-home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .col-1 starts here for mobile profile picture */
+section>div.row-home>div.col-1{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: 1px solid rgb(106, 199, 0);
+    display: block;
+    background-image: url("img/chinedu_gabriel-white-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+/* .col-1 ends here for mobile profile picture */
+
+section>div.row-home>div.col-2{
+    border: 1px solid rgb(0, 70, 199);
+    width: 72%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* div.col-2>div.text-wrapper starts here */
+section>div.row-home>div.col-2>div.text-wrapper{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid rgb(106, 199, 0);
+}
+/* div.col-2>div.text-wrapper ends here */
+
+/* .colored-text starts here */
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
+    display: flex;
+    flex-flow: row nowrap;
+    /* align-items:; */
+    gap: 20px;
+    border: 1px solid rgb(199, 0, 149);
+}
+/* .colored-text ends here */
+
+/* .colored-text h1 starts here */
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
+    color: #ffb400;
+    font-size: 39px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* .colored-text h1 ends here */
+
+/* .colored-text h2 starts here */
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text h2{
+    /* color: #ffb400; */
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* .colored-text h2 ends here */
+
+/* little line starts here */
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
+    height: 49px;
+    width: 45px;
+    background-color: #1900ff;
+    display: flex;
+    padding-top: 3px;
+    align-items: center;
+}
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line>.line{
+    height: 5px;
+    width: 45px;
+    background-color: #ffb400;
+    border-radius: 2.5px;
+}
+/* little line ends here */
+
+/* div.text-wrapper>p starts here */
+section>div.row-home>div.col-2>div.text-wrapper>p{
+    width: 75%;
+}
+/* div.text-wrapper>p ends here */
+
+section>div.row-home>div.col-2>div.text-wrapper>button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(106, 199, 0);
+    background-color: #ffb400;
+    border-radius: 25px;
+    width: 175px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
+    height: 40px;
+    width: 40px ;
+    background-color: #ffb400;
+    border-radius: 20px;
+    background-image: url("img/arrow_right_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    border: 1px solid rgb(106, 199, 0);
+}
+
+/* div.row-home ends here */
