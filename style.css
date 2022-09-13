@@ -9,6 +9,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
+
 section{
     height: 99vh;
     display: flex;
@@ -16,6 +17,7 @@ section{
     justify-content: center;
     align-items: center;
 }
+
 /* .divider starts here */
 section>div.divider-bg{
     background-color:#ffb400;
@@ -27,6 +29,7 @@ section>div.divider-bg{
     rotate: -15deg;
     z-index: -1;
     /* transform: rotate(-15deg); */
+    display: none;/*undo here when you are ready*/
 }
 /* .divider ends here */
 
@@ -44,7 +47,7 @@ section>div.profile-picture{
     position: fixed;
     top: 40px;
     left: 55px;
-    /* display: none; */
+    display: none;/*undo here when you are ready*/
 }
 /* profile picture ends here */
 
@@ -97,6 +100,7 @@ section>div.nav>ul>li{
     width: 150px;
     padding-left: 10px;
     text-align: center;
+    padding-left:28px;
 
 }
 /* collective icon style */
@@ -113,6 +117,7 @@ section>div.nav>ul>li>div.icon1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
+    
 }
 section>div.nav>ul>li>div.icon2{
     background-image: url("img/user_icon.png");
@@ -143,6 +148,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    display: none;/*undo here when you are ready*/
 }
 
 /* .col-1 starts here for mobile profile picture */
@@ -163,7 +169,7 @@ section>div.row-home>div.col-1{
 section>div.row-home>div.col-2{
     border: 1px solid rgb(0, 70, 199);
     width: 72%;
-    height: 40%;
+    height: 39%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -237,12 +243,15 @@ section>div.row-home>div.col-2>div.text-wrapper>button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid rgb(106, 199, 0);
-    background-color: #ffb400;
+    border: 1px solid #ffb400;;
+    background-color: transparent;
     border-radius: 25px;
     width: 175px;
     padding-left: 10px;
     text-align: center;
+    color: white;
+    font-size: 11px;
+    padding-left:20px;
 }
 
 section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
@@ -258,3 +267,7 @@ section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
 }
 
 /* div.row-home ends here */
+
+/* div.row-about starts here */
+section>div.row-about>div.banner
+/* div.row-about ends here */
