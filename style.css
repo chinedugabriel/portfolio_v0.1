@@ -269,5 +269,195 @@ section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
 /* div.row-home ends here */
 
 /* div.row-about starts here */
-section>div.row-about>div.banner
+section>div.row-about::-webkit-scrollbar{
+    /* this helps to hide the scrollbar */
+    display: none;
+}
+section>div.row-about{
+    height: 100vh;
+    width: 70%;
+    border:1px solid #1900ff;
+    overflow-y: scroll;
+    /* display:flex; */
+    /* flex-flow: column nowrap; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* padding-top: 40px; */
+    gap: 20px;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+
+/* banner-text starts here */
+section>div.row-about>div.banner-text{
+    border: 1px solid green;
+    width: 99.8%;
+    height: 20%;
+    /* text-align: center; */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+section>div.row-about>div.banner-text>span{
+    font-size: 110px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: hsl(0, 0%, 100%, .07);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+section>div.row-about>div.banner-text>h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+section>div.row-about>div.banner-text>h1>span{
+    color: #ffb400;
+}
+/* banner-text ends here */
+
+/* div.row-personal-info starts here */
+section>div.row-about>div.row-personal-info{
+    border: 1px solid red;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* div.row-personal-info ends here */
+
+/* div.row-personal-info>div.personal-info-wrapper starts here */
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
+    border: 1px solid yellow;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+/* div.row-personal-info>div.personal-info-wrapper ends here */
+
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>h1{
+    /* font-weight: 800; */
+}
+
+/*div.personal-info-wrapper>div.list-info starts here*/
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 90px;
+    border: 1px solid rgb(168, 168, 2);
+    height: 60%;
+    width: 90%;
+}
+/*div.personal-info-wrapper>div.list-info ends here*/
+
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
+    height: 100%;
+    border: 1px solid rgb(2, 115, 168);
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li{
+    font-weight: 400;
+    color: white;
+}
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li>span{
+    /* cursor: none; */
+    opacity: .8;
+}
+
+/* div.personal-info-wrapper>button Starts here*/
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffb400;;
+    background-color: transparent;
+    border-radius: 25px;
+    width: 175px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    padding-left:20px;
+}
+
+
+
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.icon{
+    height: 40px;
+    width: 40px ;
+    background-color: #ffb400;
+    border-radius: 20px;
+    background-image: url("img/file_download_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    border: 1px solid rgb(106, 199, 0);
+}
+/* div.personal-info-wrapper>button Starts here*/
+
 /* div.row-about ends here */
+
+/* div.my-skills start here */
+section>div.row-about>div.my-skills{
+    border: 1px solid rgb(106, 199, 0);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+section>div.row-about>div.my-skills>h1{
+    font-weight: 600;
+}
+
+/* div.my-skills>div.lang-wrapper starts here */
+section>div.row-about>div.my-skills>div.lang-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ffb400;
+    align-self: center;
+}
+
+/* div.lang-wrapper>div.lan starts here */
+section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
+    border: 3px solid #ffb400;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* div.lang-wrapper>div.lan ends here */
+/* div.my-skills>div.lang-wrapper ends here */
+
+section>div.row-about>div.edu-exp{
+    height: 70%;
+}
+section>div.row-about>div.edu-exp>div.col1{
+    border: 1px solid red;
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-between;
+}
+section>div.row-about>div.edu-exp>div.col1>div{
+    flex: 1;
+}
