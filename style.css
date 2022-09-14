@@ -450,14 +450,41 @@ section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
 /* div.my-skills>div.lang-wrapper ends here */
 
 section>div.row-about>div.edu-exp{
-    height: 70%;
+    /* height: 70%; */
 }
 section>div.row-about>div.edu-exp>div.col1{
     border: 1px solid red;
     /* width: 80%; */
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column ;
+    height: 70vh;
 }
-section>div.row-about>div.edu-exp>div.col1>div{
-    flex: 1;
+section>div.row-about>div.edu-exp>div.col1>div.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border: 1px solid purple;
+    height: 20%;
+}
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
+    border: 1px solid green;
+    width: 45%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.icon-year{
+    background-color: #ffb400;
+    background-image: url("img/potfolio_icon.png");
+    height: 40px;
+    width: 40px ;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+
+}
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
+
 }
