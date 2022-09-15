@@ -563,4 +563,25 @@ section>div.row-portfolio{
     /* display: none; */
 }
 
+
+
+
+/* section>div.row-portfolio starts here */
+
+/* ------------------------------------------------- */
+
+/* section>div.row-portfolio starts here */
+section>div.row-contact::-webkit-scrollbar{
+    /* this helps to hide the scrollbar */
+    display: none;
+}
+section>div.row-contact{
+    height: 100vh;
+    width: 70%;
+    border:1px solid #1900ff;
+    overflow-y: scroll;
+    gap: 20px;
+    display: none;
+}
+
 /* section>div.row-portfolio starts here */
