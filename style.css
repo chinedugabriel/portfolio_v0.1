@@ -561,7 +561,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    /* display: none; */
+    display: none;
 }
 
 section>div.row-portfolio>div.project-list{
@@ -572,6 +572,7 @@ section>div.row-portfolio>div.project-list{
     border:1px solid #1900ff;
 }
 
+/* div.project-list>ul starts here */
 section>div.row-portfolio>div.project-list>ul{
     border:1px solid #00c997;
     display: flex;
@@ -580,6 +581,7 @@ section>div.row-portfolio>div.project-list>ul{
     width: 40%;
     list-style: none;
 }
+/* div.project-list>ul ends here */
 
 
 section>div.row-portfolio>.portfolio-project{
@@ -589,6 +591,7 @@ section>div.row-portfolio>.portfolio-project{
     display: flex;
     justify-content: center;
 }
+
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     border:1px solid #4600c9;
     /* height: 60%; */
@@ -599,7 +602,8 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     align-items: center;
     align-content: space-evenly;
 }
-section>div.row-portfolio>.portfolio-project .project{
+
+section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     border:1px solid #0057c9;
     height: 30%;
     width: 30%;
@@ -622,7 +626,8 @@ section>div.row-contact{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
 
 /* section>div.row-portfolio starts here */
+
