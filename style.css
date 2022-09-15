@@ -282,7 +282,7 @@ section>div.row-about{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    /* display: none; */
+    display: none;
 }
 
 /* banner-text starts here */
@@ -560,5 +560,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
+
+/* section>div.row-portfolio starts here */
