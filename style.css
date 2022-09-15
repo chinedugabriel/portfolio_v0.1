@@ -268,28 +268,25 @@ section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
 
 /* div.row-home ends here */
 
+
+/* ---------------------------------------------------------------------------- */
 /* div.row-about starts here */
 section>div.row-about::-webkit-scrollbar{
     /* this helps to hide the scrollbar */
     display: none;
 }
+/* section>div.row-about starts here */
 section>div.row-about{
     height: 100vh;
     width: 70%;
     border:1px solid #1900ff;
     overflow-y: scroll;
-    /* display:flex; */
-    /* flex-flow: column nowrap; */
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    /* padding-top: 40px; */
     gap: 20px;
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
+    /* display: none; */
 }
 
 /* banner-text starts here */
-section>div.row-about>div.banner-text{
+div.banner-text{
     border: 1px solid green;
     width: 99.8%;
     height: 20%;
@@ -299,7 +296,7 @@ section>div.row-about>div.banner-text{
     justify-content: center;
     position: relative;
 }
-section>div.row-about>div.banner-text>span{
+div.banner-text>span{
     font-size: 110px;
     text-transform: uppercase;
     font-weight: 800;
@@ -312,11 +309,11 @@ section>div.row-about>div.banner-text>span{
     transform: translateY(-50%);
     text-align: center;
 }
-section>div.row-about>div.banner-text>h1{
+div.banner-text>h1{
     font-size: 56px;
     font-weight: 800;
 }
-section>div.row-about>div.banner-text>h1>span{
+div.banner-text>h1>span{
     color: #ffb400;
 }
 /* banner-text ends here */
@@ -431,6 +428,7 @@ section>div.row-about>div.my-skills>div.lang-wrapper{
     height: 60%;
     justify-content: space-evenly;
     align-items: center;
+    align-content: space-evenly;
     gap: 20px;
     border: 1px solid #ffb400;
     align-self: center;
@@ -449,8 +447,12 @@ section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
 /* div.lang-wrapper>div.lan ends here */
 /* div.my-skills>div.lang-wrapper ends here */
 
+
+/* section>div.row-about>div.edu-exp starts here */
+
 section>div.row-about>div.edu-exp{
     /* height: 70%; */
+    
 }
 section>div.row-about>div.edu-exp>div.col1{
     border: 1px solid red;
@@ -459,32 +461,104 @@ section>div.row-about>div.edu-exp>div.col1{
     align-items: center;
     justify-content: space-evenly;
     flex-flow: column ;
-    height: 70vh;
+    height: 60vh;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     border: 1px solid purple;
-    height: 20%;
+    /* height: 30%; */
+    width: 95%;
 }
+/* div.edu-exp>div.col1>div.wrapper>div.row starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
     border: 1px solid green;
     width: 45%;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
+
+/* div.wrapper>div.row>div.icon-wrapper starts here */
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* div.wrapper>div.row>div.icon-wrapper ends here */
+
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.icon-year{
     background-color: #ffb400;
-    background-image: url("img/potfolio_icon.png");
+    background-image: url("img/potfolio_icon\ _v2.png");
     height: 40px;
     width: 40px ;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
-
 }
-section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
 
+/* div.icon-wrapper>div.line starts here */
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 2px;
+    height: 98px;
+    
+}
+/* div.icon-wrapper>div.line ends here */
+
+/* div.col1>div.wrapper>div.row>div.content starts here */
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
+    width: 500px;
+    height: 150px;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+/* div.col1>div.wrapper>div.row>div.content ends here */
+
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
+    width: 92px;
+    border-radius: 25px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
+    font-size: 16px;
+}
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
+    font-size: 13px;
+    color: #ffffffc2;
+}
+
+section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>p{
+    font-size: 13px;
+}
+
+/* div.edu-exp>div.col1>div.wrapper>div.row ends here */
+/* section>div.row-about>div.edu-exp ends here */
+/* section>div.row-about starts here */
+
+/* ------------------------------------------------------------------------------ */
+
+/* section>div.row-portfolio starts here */
+section>div.row-portfolio::-webkit-scrollbar{
+    /* this helps to hide the scrollbar */
+    display: none;
+}
+section>div.row-portfolio{
+    height: 100vh;
+    width: 70%;
+    border:1px solid #1900ff;
+    overflow-y: scroll;
+    gap: 20px;
+    display: none;
 }
