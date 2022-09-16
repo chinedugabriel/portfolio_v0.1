@@ -625,9 +625,198 @@ section>div.row-contact{
     width: 70%;
     border:1px solid #1900ff;
     overflow-y: scroll;
-    gap: 20px;
+    /* gap: 0px; */
     /* display: none; */
 }
 
+section>div.row-contact>div.row-form{
+    display: flex;
+    flex-flow:  row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border:1px solid #00ffdd;
+    height: 50%;
+    /* margin-top: 2%; */
+}
+
+section>div.row-contact>div.row-form>.col1{
+    border:1px solid #ff00bf;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 400px;
+}
+section>div.row-contact>div.row-form>.col1>h2{
+    border:1px solid #e688ce;
+    /* font-weight: 500; */
+}
+section>div.row-contact>div.row-form>.col1>p{
+    width: 350px;
+    height: 77px;
+    line-height: 20px;
+    font-size: 15px;
+    border:1px solid #ffffff;
+}
+
+section>div.row-contact>div.row-form>.col1>.info{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+section>div.row-contact>div.row-form>.col1>.info>.map-icon{
+    border:1px solid #ffffff;
+    width: 35px;
+    height: 35px;
+    background-image: url("img/map_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* .col1>.info>.mail-icon starts here */
+section>div.row-contact>div.row-form>.col1>.info>.mail-icon{
+    border:1px solid #ffffff;
+    width: 35px;
+    height: 35px;
+    background-image: url("img/letter_mail_message_post_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* .col1>.info>.mail-icon ends here */
+
+/* .info>.tel-icon starts here */
+section>div.row-contact>div.row-form>.col1>.info>.tel-icon{
+    border:1px solid #ffffff;
+    width: 35px;
+    height: 35px;
+    background-image: url("img/phone-call.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* .info>.tel-icon ends here */
+
+/* .info>.map-text starts here */
+section>div.row-contact>div.row-form>.col1>.info>.map-text{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:3px;
+}
+/* .info>.map-text ends here */
+
+/* .info>.map-text>p.address-p starts here */
+section>div.row-contact>div.row-form>.col1>.info>.map-text>p.address-p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.712);
+}
+/* .info>.map-text>p.address-p ends here */
+/* .info>.map-text>p.details starts here */
+section>div.row-contact>div.row-form>.col1>.info>.map-text>p.details{
+    width: 300px;
+    line-height: 20px;
+    font-size: 13px;
+    border:1px solid #ffffff;
+}
+/* .info>.map-text>p.details ends here */
+
 /* section>div.row-portfolio starts here */
 
+section>div.row-contact>div.row-form>.col2{
+    border:1px solid #a80000;
+    width: 50%;
+    height: 90%;
+}
+
+/* div.row-form>.col2 starts here */
+section>div.row-contact>div.row-form>.col2>form{
+    border:1px solid #a80000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+section>div.row-contact>div.row-form>.col2>form>div.form-group{
+    border:1px solid #008fa8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+section>div.row-contact>div.row-form>.col2>form>div.form-group>input{
+    width: 45%;
+    height: 44px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #252525;
+    padding:0PX 11PX;
+    color: white;
+}
+
+section>div.row-contact>div.row-form>.col2>form>input{
+    width: 93%;
+    height: 44px;
+    border-radius: 30px;
+    align-self: center;
+    border: none;
+    outline: none;
+    background-color: #252525;
+    padding:0PX 11PX;
+    color: white;
+}
+section>div.row-contact>div.row-form>.col2>form>textarea{
+    width: 93%;
+    height: 190px;
+    border-radius: 30px;
+    align-self: center;
+    border: none;
+    outline: none;
+    background-color: #252525;
+    color: white;
+    padding:11PX 11PX;
+    font-size: 16px;
+    resize: none;
+    text-align: left;
+}
+
+section>div.row-contact>div.row-form>.col2>form>.btn-wrapper{
+    width: 93%;
+    border: 1px solid #ffb400;
+    align-self: center
+}
+section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffb400;
+    background-color: transparent;
+    border-radius: 25px;
+    width: 175px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    padding-left:20px;
+    /* align-self: ; */
+}
+
+
+
+section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
+    height: 40px;
+    width: 40px ;
+    background-color: #ffb400;
+    border-radius: 20px;
+    background-image: url("img/file_download_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    border: 1px solid rgb(106, 199, 0);
+}
+/* div.row-form>.col2 ends here */
+
+/* mobile version starts here */
+@media screen and (max-width: 600px) {
+    
+}
+/* mobile version ends here */
