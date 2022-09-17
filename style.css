@@ -610,12 +610,12 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     background-color: #ffb400;
     border-radius: 5%;
 }
+/* section>div.row-portfolio ends here */
 
-/* section>div.row-portfolio starts here */
 
 /* ------------------------------------------------- */
 
-/* section>div.row-portfolio starts here */
+/* section>div.row-contact starts here */
 section>div.row-contact::-webkit-scrollbar{
     /* this helps to hide the scrollbar */
     display: none;
@@ -719,13 +719,14 @@ section>div.row-contact>div.row-form>.col1>.info>.map-text>p.details{
 }
 /* .info>.map-text>p.details ends here */
 
-/* section>div.row-portfolio starts here */
-
+/* section>div.row-contact>div.row-form>.col2 starts here */
 section>div.row-contact>div.row-form>.col2{
     border:1px solid #a80000;
     width: 50%;
     height: 90%;
 }
+/* section>div.row-contact>div.row-form>.col2 ends here */
+
 
 /* div.row-form>.col2 starts here */
 section>div.row-contact>div.row-form>.col2>form{
@@ -736,12 +737,18 @@ section>div.row-contact>div.row-form>.col2>form{
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
+/* div.row-form>.col2 ends here */
+
+/* div.row-form>.col2>form>div.form-group starts here */
 section>div.row-contact>div.row-form>.col2>form>div.form-group{
-    border:1px solid #008fa8;
+    /* border:1px solid #008fa8; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
+/* div.row-form>.col2>form>div.form-group ends here */
+
+/* >div.row-form>.col2>form>div.form-group>input starts here */
 section>div.row-contact>div.row-form>.col2>form>div.form-group>input{
     width: 45%;
     height: 44px;
@@ -752,7 +759,9 @@ section>div.row-contact>div.row-form>.col2>form>div.form-group>input{
     padding:0PX 11PX;
     color: white;
 }
+/* >div.row-form>.col2>form>div.form-group>input ends here */
 
+/* div.row-form>.col2>form>input starts here */
 section>div.row-contact>div.row-form>.col2>form>input{
     width: 93%;
     height: 44px;
@@ -764,9 +773,12 @@ section>div.row-contact>div.row-form>.col2>form>input{
     padding:0PX 11PX;
     color: white;
 }
+/* div.row-form>.col2>form>input ends here */
+
+/* div.row-form>.col2>form>textarea starts here */
 section>div.row-contact>div.row-form>.col2>form>textarea{
     width: 93%;
-    height: 190px;
+    height: 170px;
     border-radius: 30px;
     align-self: center;
     border: none;
@@ -776,14 +788,18 @@ section>div.row-contact>div.row-form>.col2>form>textarea{
     padding:11PX 11PX;
     font-size: 16px;
     resize: none;
-    text-align: left;
 }
+/* div.row-form>.col2>form>textarea ends here */
 
+/* .col2>form>.btn-wrapper starts here */
 section>div.row-contact>div.row-form>.col2>form>.btn-wrapper{
     width: 93%;
     border: 1px solid #ffb400;
     align-self: center
 }
+/* .col2>form>.btn-wrapper ends here */
+
+/* .col2>form>.btn-wrapper>button starts here */
 section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button{
     display: flex;
     align-items: center;
@@ -799,9 +815,10 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button{
     padding-left:20px;
     /* align-self: ; */
 }
+/* .col2>form>.btn-wrapper>button ends here */
 
 
-
+/* .col2>form>.btn-wrapper>button>.icon starts here */
 section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     height: 40px;
     width: 40px ;
@@ -813,10 +830,844 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     background-size: 22px;
     border: 1px solid rgb(106, 199, 0);
 }
+/* .col2>form>.btn-wrapper>button>.icon ends here */
 /* div.row-form>.col2 ends here */
 
+
+/* ========================================================== */
+
 /* mobile version starts here */
-@media screen and (max-width: 600px) {
+@media  (max-width: 1019px) {
+
+    section{
+        height: 99vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
     
+    /* .divider starts here */
+    section>div.divider-bg{
+        background-color:#ffb400;
+        height: 200%;
+        width: 100%;
+        position: fixed;
+        top: -50%;
+        left: -85%;
+        rotate: -15deg;
+        z-index: -1;
+        /* transform: rotate(-15deg); */
+        display: none;/*undo here when you are ready*/
+    }
+    /* .divider ends here */
+    
+    /* profile picture starts here */
+    section>div.profile-picture{
+        height: calc(100vh - 80px);
+        width: 27%;
+        background-image: url("img/chinedu_gabriel-white-preview.png");
+        background-position: center;
+        /* background-color: red; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        z-index: 11;
+        position: fixed;
+        top: 40px;
+        left: 55px;
+        display: none;/*undo here when you are ready*/
+    }
+    /* profile picture ends here */
+    
+    /* div.mode-switch starts here */
+    section>div.mode-switch{
+        height: 40px;
+        width: 40px;
+        background-color: rgba(187, 187, 187, 0.3);
+        border-radius: 20px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 99;
+        background-image: url("img/wb_sunny_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+    }
+    /* div.mode-switch ends here */
+    
+    /* nav starts here */
+    section>div.nav{
+        border: 1px solid red;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        position: fixed;
+        right: 30px;
+        top: 30%;
+        /* height: 40%; */
+        display: none;
+    }
+    
+    section>div.nav>ul{
+        list-style: none;
+        height: 350px;
+        /* width: 200px; */
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    
+    section>div.nav>ul>li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgb(106, 199, 0);
+        background-color: #ffb400;
+        border-radius: 25px;
+        width: 150px;
+        padding-left: 10px;
+        text-align: center;
+        padding-left:28px;
+    
+    }
+    /* collective icon style */
+    section>div.nav>ul>li>div{
+        height: 40px;
+        width: 40px ;
+        background-color: rgba(187, 187, 187, 0.3);
+        border-radius: 20px;
+        border: 1px solid rgb(106, 199, 0);
+    }
+    /* individual icon */
+    section>div.nav>ul>li>div.icon1{
+        background-image: url("img/home_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+        
+    }
+    section>div.nav>ul>li>div.icon2{
+        background-image: url("img/user_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+    }
+    section>div.nav>ul>li>div.icon3{
+        background-image: url("img/potfolio_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+    }
+    section>div.nav>ul>li>div.icon4{
+        background-image: url("img/outgoing_mail_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+    
+    }
+    /* nav ends here */
+    
+    /* div.row-home starts here */
+    section>div.row-home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        display: none;/*undo here when you are ready*/
+    }
+    
+    /* .col-1 starts here for mobile profile picture */
+    section>div.row-home>div.col-1{
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        border: 1px solid rgb(106, 199, 0);
+        display: block;
+        background-image: url("img/chinedu_gabriel-white-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    /* .col-1 ends here for mobile profile picture */
+    
+    section>div.row-home>div.col-2{
+        border: 1px solid rgb(0, 70, 199);
+        width: 72%;
+        height: 39%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    /* div.col-2>div.text-wrapper starts here */
+    section>div.row-home>div.col-2>div.text-wrapper{
+        width: 60%;
+        height: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        border: 1px solid rgb(106, 199, 0);
+    }
+    /* div.col-2>div.text-wrapper ends here */
+    
+    /* .colored-text starts here */
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
+        display: flex;
+        flex-flow: row nowrap;
+        /* align-items:; */
+        gap: 20px;
+        border: 1px solid rgb(199, 0, 149);
+    }
+    /* .colored-text ends here */
+    
+    /* .colored-text h1 starts here */
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
+        color: #ffb400;
+        font-size: 39px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    /* .colored-text h1 ends here */
+    
+    /* .colored-text h2 starts here */
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text h2{
+        /* color: #ffb400; */
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    /* .colored-text h2 ends here */
+    
+    /* little line starts here */
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
+        height: 49px;
+        width: 45px;
+        background-color: #1900ff;
+        display: flex;
+        padding-top: 3px;
+        align-items: center;
+    }
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line>.line{
+        height: 5px;
+        width: 45px;
+        background-color: #ffb400;
+        border-radius: 2.5px;
+    }
+    /* little line ends here */
+    
+    /* div.text-wrapper>p starts here */
+    section>div.row-home>div.col-2>div.text-wrapper>p{
+        width: 75%;
+    }
+    /* div.text-wrapper>p ends here */
+    
+    section>div.row-home>div.col-2>div.text-wrapper>button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ffb400;;
+        background-color: transparent;
+        border-radius: 25px;
+        width: 175px;
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        font-size: 11px;
+        padding-left:20px;
+    }
+    
+    section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
+        height: 40px;
+        width: 40px ;
+        background-color: #ffb400;
+        border-radius: 20px;
+        background-image: url("img/arrow_right_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+        border: 1px solid rgb(106, 199, 0);
+    }
+    
+    /* div.row-home ends here */
+    
+    
+    /* ---------------------------------------------------------------------------- */
+    /* div.row-about starts here */
+    section>div.row-about::-webkit-scrollbar{
+        /* this helps to hide the scrollbar */
+        display: none;
+    }
+    /* section>div.row-about starts here */
+    section>div.row-about{
+        height: 100vh;
+        width: 70%;
+        border:1px solid #1900ff;
+        overflow-y: scroll;
+        gap: 20px;
+        display: none;
+    }
+    
+    /* banner-text starts here */
+    div.banner-text{
+        border: 1px solid green;
+        width: 99.8%;
+        height: 20%;
+        /* text-align: center; */ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    div.banner-text>span{
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 10px;
+        color: hsl(0, 0%, 100%, .07);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    div.banner-text>h1{
+        font-size: 35px;
+        font-weight: 800;
+    }
+    div.banner-text>h1>span{
+        color: #ffb400;
+    }
+    /* banner-text ends here */
+    
+    /* div.row-personal-info starts here */
+    section>div.row-about>div.row-personal-info{
+        border: 1px solid red;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* div.row-personal-info ends here */
+    
+    /* div.row-personal-info>div.personal-info-wrapper starts here */
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
+        border: 1px solid yellow;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+    /* div.row-personal-info>div.personal-info-wrapper ends here */
+    
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>h1{
+        /* font-weight: 800; */
+    }
+    
+    /*div.personal-info-wrapper>div.list-info starts here*/
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 90px;
+        border: 1px solid rgb(168, 168, 2);
+        height: 60%;
+        width: 90%;
+    }
+    /*div.personal-info-wrapper>div.list-info ends here*/
+    
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
+        height: 100%;
+        border: 1px solid rgb(2, 115, 168);
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li{
+        font-weight: 400;
+        color: white;
+    }
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li>span{
+        /* cursor: none; */
+        opacity: .8;
+    }
+    
+    /* div.personal-info-wrapper>button Starts here*/
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ffb400;;
+        background-color: transparent;
+        border-radius: 25px;
+        width: 175px;
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        font-size: 11px;
+        padding-left:20px;
+    }
+    
+    
+    
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.icon{
+        height: 40px;
+        width: 40px ;
+        background-color: #ffb400;
+        border-radius: 20px;
+        background-image: url("img/file_download_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+        border: 1px solid rgb(106, 199, 0);
+    }
+    /* div.personal-info-wrapper>button Starts here*/
+    
+    /* div.row-about ends here */
+    
+    /* div.my-skills start here */
+    section>div.row-about>div.my-skills{
+        border: 1px solid rgb(106, 199, 0);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+    
+    section>div.row-about>div.my-skills>h1{
+        font-weight: 600;
+    }
+    
+    /* div.my-skills>div.lang-wrapper starts here */
+    section>div.row-about>div.my-skills>div.lang-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        width: 60%;
+        height: 60%;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-evenly;
+        gap: 20px;
+        border: 1px solid #ffb400;
+        align-self: center;
+    }
+    
+    /* div.lang-wrapper>div.lan starts here */
+    section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
+        border: 3px solid #ffb400;
+        height: 150px;
+        width: 150px;
+        border-radius: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* div.lang-wrapper>div.lan ends here */
+    /* div.my-skills>div.lang-wrapper ends here */
+    
+    
+    /* section>div.row-about>div.edu-exp starts here */
+    
+    section>div.row-about>div.edu-exp{
+        /* height: 70%; */
+        
+    }
+    section>div.row-about>div.edu-exp>div.col1{
+        border: 1px solid red;
+        /* width: 80%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column ;
+        height: 60vh;
+    }
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        border: 1px solid purple;
+        /* height: 30%; */
+        width: 95%;
+    }
+    /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
+        border: 1px solid green;
+        width: 45%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    /* div.wrapper>div.row>div.icon-wrapper starts here */
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    /* div.wrapper>div.row>div.icon-wrapper ends here */
+    
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.icon-year{
+        background-color: #ffb400;
+        background-image: url("img/potfolio_icon\ _v2.png");
+        height: 40px;
+        width: 40px ;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+    }
+    
+    /* div.icon-wrapper>div.line starts here */
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
+        background-color: rgba(255, 255, 255, 0.11);
+        width: 2px;
+        height: 98px;
+        
+    }
+    /* div.icon-wrapper>div.line ends here */
+    
+    /* div.col1>div.wrapper>div.row>div.content starts here */
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
+        width: 500px;
+        height: 150px;
+        border: 1px solid red;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+    /* div.col1>div.wrapper>div.row>div.content ends here */
+    
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
+        width: 92px;
+        border-radius: 25px;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        background-color: rgba(255, 255, 255, 0.11);
+    }
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
+        font-size: 16px;
+    }
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
+        font-size: 13px;
+        color: #ffffffc2;
+    }
+    
+    section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>p{
+        font-size: 13px;
+    }
+    
+    /* div.edu-exp>div.col1>div.wrapper>div.row ends here */
+    /* section>div.row-about>div.edu-exp ends here */
+    /* section>div.row-about starts here */
+    
+    /* ------------------------------------------------------------------------------ */
+    
+    /* section>div.row-portfolio starts here */
+    section>div.row-portfolio::-webkit-scrollbar{
+        /* this helps to hide the scrollbar */
+        display: none;
+    }
+    
+    section>div.row-portfolio{
+        height: 100vh;
+        width: 70%;
+        border:1px solid #1900ff;
+        overflow-y: scroll;
+        gap: 20px;
+        display: none;
+    }
+    
+    section>div.row-portfolio>div.project-list{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        border:1px solid #1900ff;
+    }
+    
+    /* div.project-list>ul starts here */
+    section>div.row-portfolio>div.project-list>ul{
+        border:1px solid #00c997;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+        list-style: none;
+    }
+    /* div.project-list>ul ends here */
+    
+    
+    section>div.row-portfolio>.portfolio-project{
+        border:1px solid #00c997;
+        height: 100%;
+        /* width: 90%; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
+        border:1px solid #4600c9;
+        /* height: 60%; */
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    
+    section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
+        border:1px solid #0057c9;
+        height: 30%;
+        width: 30%;
+        background-color: #ffb400;
+        border-radius: 5%;
+    }
+    /* section>div.row-portfolio ends here */
+    
+    
+    /* ------------------------------------------------- */
+    
+    /* section>div.row-contact starts here */
+    section>div.row-contact::-webkit-scrollbar{
+        /* this helps to hide the scrollbar */
+        display: none;
+    }
+    section>div.row-contact{
+        height: 100vh;
+        width: 90%;
+        border:1px solid #1900ff;
+        overflow-y: scroll;
+        /* gap: 0px; */
+        /* display: none; */
+    }
+    
+    section>div.row-contact>div.row-form{
+        display: flex;
+        flex-flow:  row wrap;
+        align-items: center;
+        justify-content: space-around;
+        border:1px solid #00ffdd;
+        height: 135%;
+        /* margin-top: 2%; */
+    }
+    
+    section>div.row-contact>div.row-form>.col1{
+        border:1px solid #ff00bf;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: 50%;
+        width: 95%;
+    }
+    section>div.row-contact>div.row-form>.col1>h2{
+        border:1px solid #e688ce;
+        /* font-weight: 500; */
+    }
+    section>div.row-contact>div.row-form>.col1>p{
+        width: 95%;
+        height: auto;
+        line-height: 20px;
+        font-size: 15px;
+        border:1px solid #ffffff;
+    }
+    
+    section>div.row-contact>div.row-form>.col1>.info{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+    }
+    section>div.row-contact>div.row-form>.col1>.info>.map-icon{
+        border:1px solid #ffffff;
+        width: 35px;
+        height: 35px;
+        background-image: url("img/map_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* .col1>.info>.mail-icon starts here */
+    section>div.row-contact>div.row-form>.col1>.info>.mail-icon{
+        border:1px solid #ffffff;
+        width: 35px;
+        height: 35px;
+        background-image: url("img/letter_mail_message_post_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* .col1>.info>.mail-icon ends here */
+    
+    /* .info>.tel-icon starts here */
+    section>div.row-contact>div.row-form>.col1>.info>.tel-icon{
+        border:1px solid #ffffff;
+        width: 35px;
+        height: 35px;
+        background-image: url("img/phone-call.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* .info>.tel-icon ends here */
+    
+    /* .info>.map-text starts here */
+    section>div.row-contact>div.row-form>.col1>.info>.map-text{
+        display: flex;
+        flex-flow: column nowrap;
+        gap:3px;
+    }
+    /* .info>.map-text ends here */
+    
+    /* .info>.map-text>p.address-p starts here */
+    section>div.row-contact>div.row-form>.col1>.info>.map-text>p.address-p{
+        font-size: 85%;
+        color: rgba(255, 255, 255, 0.712);
+    }
+    /* .info>.map-text>p.address-p ends here */
+    /* .info>.map-text>p.details starts here */
+    section>div.row-contact>div.row-form>.col1>.info>.map-text>p.details{
+        width: 100%;
+        line-height: 20px;
+        font-size: 80%;
+        border:1px solid #c8d607;
+    }
+    /* .info>.map-text>p.details ends here */
+    
+    /* section>div.row-contact>div.row-form>.col2 starts here */
+    section>div.row-contact>div.row-form>.col2{
+        border:1px solid #a80000;
+        width: 100%;
+        height: 50%;
+    }
+
+    /* section>div.row-contact>div.row-form>.col2 ends here */
+    
+    
+    /* div.row-form>.col2 starts here */
+    section>div.row-contact>div.row-form>.col2>form{
+        border:1px solid #a80000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* div.row-form>.col2 ends here */
+    
+    /* div.row-form>.col2>form>div.form-group starts here */
+    section>div.row-contact>div.row-form>.col2>form>div.form-group{
+        /* border:1px solid #a80084; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        height: 25%;
+        width: 100%;
+    }
+    /* div.row-form>.col2>form>div.form-group ends here */
+    
+    /* >div.row-form>.col2>form>div.form-group>input starts here */
+    section>div.row-contact>div.row-form>.col2>form>div.form-group>input{
+        width: 90%;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        background-color: #252525;
+        padding:0PX 11PX;
+        color: white;
+    }
+    /* >div.row-form>.col2>form>div.form-group>input ends here */
+    
+    /* div.row-form>.col2>form>input starts here */
+    section>div.row-contact>div.row-form>.col2>form>input{
+        width: 90%;
+        height: 40px;
+        border-radius: 30px;
+        align-self: center;
+        border: none;
+        outline: none;
+        background-color: #252525;
+        padding:0PX 11PX;
+        color: white;
+    }
+    /* div.row-form>.col2>form>input ends here */
+    
+    /* div.row-form>.col2>form>textarea starts here */
+    section>div.row-contact>div.row-form>.col2>form>textarea{
+        width: 90%;
+        height: 100px;
+        border-radius: 30px;
+        align-self: center;
+        border: none;
+        outline: none;
+        background-color: #252525;
+        color: white;
+        padding:11PX 11PX;
+        font-size: 16px;
+        resize: none;
+    }
+    /* div.row-form>.col2>form>textarea ends here */
+    
+    /* .col2>form>.btn-wrapper starts here */
+    section>div.row-contact>div.row-form>.col2>form>.btn-wrapper{
+        width: 93%;
+        border: 1px solid #ffb400;
+        align-self: center
+    }
+    /* .col2>form>.btn-wrapper ends here */
+    
+    /* .col2>form>.btn-wrapper>button starts here */
+    section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ffb400;
+        background-color: transparent;
+        border-radius: 25px;
+        width: 175px;
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        font-size: 11px;
+        padding-left:20px;
+        /* align-self: ; */
+    }
+    /* .col2>form>.btn-wrapper>button ends here */
+    
+    
+    /* .col2>form>.btn-wrapper>button>.icon starts here */
+    section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
+        height: 40px;
+        width: 40px ;
+        background-color: #ffb400;
+        border-radius: 20px;
+        background-image: url("img/file_download_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+        border: 1px solid rgb(106, 199, 0);
+    }
+    /* .col2>form>.btn-wrapper>button>.icon ends here */
+    /* div.row-form>.col2 ends here */
+
 }
 /* mobile version ends here */
