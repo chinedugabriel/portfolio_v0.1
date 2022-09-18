@@ -150,7 +150,8 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    display: none;/*undo here when you are ready*/
+    /* display: none; */
+    /*undo here when you are ready*/
 }
 
 /* .col-1 starts here for mobile profile picture */
@@ -164,7 +165,7 @@ section>div.row-home>div.col-1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: none;
+    /* display: none; */
 }
 /* .col-1 ends here for mobile profile picture */
 
@@ -210,11 +211,12 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
 /* .colored-text h1 ends here */
 
 /* .colored-text h2 starts here */
-section>div.row-home>div.col-2>div.text-wrapper>.colored-text h2{
+section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1>span{
     /* color: #ffb400; */
     font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
+    color: white;
 }
 /* .colored-text h2 ends here */
 
@@ -953,49 +955,51 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.row-home starts here */
     section>div.row-home{
-        width: 100%;
+        width: auto;
         height: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        display: none;/*undo here when you are ready*/
+        /* display: none; */
+        /*undo here when you are ready*/
     }
     
     /* .col-1 starts here for mobile profile picture */
     section>div.row-home>div.col-1{
-        height: 300px;
-        width: 300px;
-        border-radius: 150px;
+        height: 170px;
+        width: 170px;
+        border-radius: 100px;
         border: 1px solid rgb(106, 199, 0);
         display: block;
         background-image: url("img/chinedu_gabriel-white-preview.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        display: none;
+        /* display: none; */
     }
     /* .col-1 ends here for mobile profile picture */
     
     section>div.row-home>div.col-2{
         border: 1px solid rgb(0, 70, 199);
-        width: 72%;
-        height: 39%;
+        width: 99%;
+        height: 55%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     
     /* div.col-2>div.text-wrapper starts here */
     section>div.row-home>div.col-2>div.text-wrapper{
-        width: 60%;
-        height: 80%;
+        width: 90%;
+        height: 90%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         gap: 15px;
         border: 1px solid rgb(106, 199, 0);
+        text-align: center;
     }
     /* div.col-2>div.text-wrapper ends here */
     
@@ -1006,24 +1010,26 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         /* align-items:; */
         gap: 20px;
         border: 1px solid rgb(199, 0, 149);
+        width: 99%;
     }
     /* .colored-text ends here */
     
     /* .colored-text h1 starts here */
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
         color: #ffb400;
-        font-size: 39px;
+        font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
     }
     /* .colored-text h1 ends here */
     
     /* .colored-text h2 starts here */
-    section>div.row-home>div.col-2>div.text-wrapper>.colored-text h2{
+    section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1>span{
         /* color: #ffb400; */
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
+        color: white;
     }
     /* .colored-text h2 ends here */
     
@@ -1031,10 +1037,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
         height: 49px;
         width: 45px;
-        background-color: #1900ff;
+        /* background-color: #1900ff; */
         display: flex;
         padding-top: 3px;
         align-items: center;
+        display: none;
     }
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line>.line{
         height: 5px;
@@ -1046,7 +1053,9 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.text-wrapper>p starts here */
     section>div.row-home>div.col-2>div.text-wrapper>p{
-        width: 75%;
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
     }
     /* div.text-wrapper>p ends here */
     
@@ -1093,7 +1102,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         border:1px solid #1900ff;
         overflow-y: scroll;
         gap: 20px;
-        display: none;
+        /* display: none; */
         padding-bottom: 50px;
     }
     
@@ -1375,7 +1384,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         overflow-y: scroll;
         gap: 20px;
         padding-bottom: 50px;
-        /* display: none; */
+        display: none;
     }
     
     section>div.row-portfolio>div.project-list{
