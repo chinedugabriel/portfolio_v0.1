@@ -16,6 +16,8 @@ section{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    /* padding-bottom: 50px; */
+    /* position: relative; */
 }
 
 /* .divider starts here */
@@ -561,7 +563,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
 
 section>div.row-portfolio>div.project-list{
@@ -626,7 +628,7 @@ section>div.row-contact{
     border:1px solid #1900ff;
     overflow-y: scroll;
     /* gap: 0px; */
-    /* display: none; */
+    display: none;
 }
 
 section>div.row-contact>div.row-form{
@@ -819,7 +821,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 @media  (max-width: 1019px) {
 
     section{
-        height: 100%;
+        /* height: 90%; */
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -1092,6 +1094,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         overflow-y: scroll;
         gap: 20px;
         display: none;
+        padding-bottom: 50px;
     }
     
     /* banner-text starts here */
@@ -1365,12 +1368,13 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     
     section>div.row-portfolio{
-        height: 100vh;
-        width: 70%;
+        height: auto;
+        width: 99%;
         border:1px solid #1900ff;
         overflow-y: scroll;
         gap: 20px;
-        display: none;
+        padding-bottom: 50px;
+        /* display: none; */
     }
     
     section>div.row-portfolio>div.project-list{
@@ -1395,7 +1399,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio>.portfolio-project{
         border:1px solid #00c997;
-        height: 100%;
+        height: 370vh;
         /* width: 90%; */
         display: flex;
         justify-content: center;
@@ -1403,7 +1407,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
         border:1px solid #4600c9;
-        /* height: 60%; */
+        height: auto;
         width: 90%;
         display: flex;
         flex-flow: row wrap;
@@ -1414,10 +1418,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
         border:1px solid #0057c9;
-        height: 30%;
-        width: 30%;
+        height: 200px;
+        width: 90%;
         background-color: #ffb400;
         border-radius: 5%;
+        /* flex: ; */
     }
     /* section>div.row-portfolio ends here */
     
@@ -1434,6 +1439,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         width: 90%;
         border:1px solid #1900ff;
         overflow-y: scroll;
+        padding-bottom: 50px;
         /* gap: 0px; */
         /* display: none; */
     }
@@ -1624,6 +1630,67 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     /* .col2>form>.btn-wrapper>button>.icon ends here */
     /* div.row-form>.col2 ends here */
+
+    div.mobile-nav{
+        border: 1px solid red;
+        width: 99%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #222222;
+        /* display: flex; */
+    }
+    
+    div.mobile-nav>ul{
+        /* width: 200px; */
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+
+    div.mobile-nav>ul>li{
+
+    }
+    /* collective icon style */
+    div.mobile-nav>ul>li>div{
+    height: 40px;
+    width: 40px ;
+    background-color: rgba(187, 187, 187, 0.3);
+    border-radius: 20px;
+    border: 1px solid rgb(106, 199, 0);
+    /*  */
+}
+    /* individual icon */
+    div.mobile-nav>ul>li>div.icon1{
+    background-image: url("img/home_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    
+}
+div.mobile-nav>ul>li>div.icon2{
+    background-image: url("img/user_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+div.mobile-nav>ul>li>div.icon3{
+    background-image: url("img/potfolio_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+div.mobile-nav>ul>li>div.icon4{
+    background-image: url("img/outgoing_mail_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+
+}
 
 }
 /* mobile version ends here */
