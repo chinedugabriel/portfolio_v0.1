@@ -1097,7 +1097,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         padding-bottom: 50px;
     }
     
-    /* banner-text starts here */
+    /* === banner-text starts here === */
     div.banner-text{
         border: 1px solid green;
         width: 99.8%;
@@ -1113,7 +1113,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 10px;
-        color: hsl(0, 0%, 100%, .07);
+        color: rgba(255, 255, 255, 0.185);
         position: absolute;
         left: 0;
         right: 0;
@@ -1122,13 +1122,14 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         text-align: center;
     }
     div.banner-text>h1{
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 800;
+        /* display: none; */
     }
     div.banner-text>h1>span{
         color: #ffb400;
     }
-    /* banner-text ends here */
+    /* === banner-text ends here === */
     
     /* div.row-personal-info starts here */
     section>div.row-about>div.row-personal-info{
@@ -1389,10 +1390,15 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-portfolio>div.project-list>ul{
         border:1px solid #00c997;
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-        width: 40%;
+        width: 100%;
         list-style: none;
+    }
+
+    section>div.row-portfolio>div.project-list>ul>#p1{
+        color: #ffb400;
     }
     /* div.project-list>ul ends here */
     
