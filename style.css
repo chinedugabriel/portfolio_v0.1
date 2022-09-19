@@ -71,6 +71,9 @@ section>div.mode-switch{
 /* div.mode-switch ends here */
 
 /* nav starts here */
+div.mobile-nav{
+    display: none;
+}
 section>div.nav{
     border: 1px solid red;
     display: flex;
@@ -150,7 +153,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
     /*undo here when you are ready*/
 }
 
@@ -172,16 +175,17 @@ section>div.row-home>div.col-1{
 section>div.row-home>div.col-2{
     border: 1px solid rgb(0, 70, 199);
     width: 72%;
-    height: 39%;
+    height: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 80px;
 }
 
 /* div.col-2>div.text-wrapper starts here */
 section>div.row-home>div.col-2>div.text-wrapper{
     width: 60%;
-    height: 80%;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -286,7 +290,7 @@ section>div.row-about{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
 
 /* banner-text starts here */
@@ -361,7 +365,7 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-i
 
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
     height: 100%;
-    border: 1px solid rgb(2, 115, 168);
+    /* border: 1px solid rgb(2, 115, 168); */
     list-style: none;
     display: flex;
     flex-flow: column nowrap;
@@ -417,7 +421,9 @@ section>div.row-about>div.my-skills{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 70%;
+    height: auto;
+    gap: 20px;
+    padding: 15px 0px;
 }
 
 section>div.row-about>div.my-skills>h1{
@@ -429,13 +435,14 @@ section>div.row-about>div.my-skills>div.lang-wrapper{
     display: flex;
     flex-flow: row wrap;
     width: 60%;
-    height: 60%;
+    height: auto;
     justify-content: space-evenly;
     align-items: center;
-    align-content: space-evenly;
+    align-content: flex-start;
     gap: 20px;
     border: 1px solid #ffb400;
     align-self: center;
+    padding: 20px ;
 }
 
 /* div.lang-wrapper>div.lan starts here */
@@ -465,20 +472,24 @@ section>div.row-about>div.edu-exp>div.col1{
     align-items: center;
     justify-content: space-evenly;
     flex-flow: column ;
-    height: 60vh;
+    /* height: 60vh; */
+    padding: 20px;
+    gap: 25px;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 1px solid purple;
-    /* height: 30%; */
-    width: 95%;
+    height: auto;
+    /* width: 95%; */
+    width: auto;
 }
 /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
     border: 1px solid green;
-    width: 45%;
+    height: auto;
+    width: 49%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -565,7 +576,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    /* display: none; */
+    display: none;
 }
 
 section>div.row-portfolio>div.project-list{
@@ -870,8 +881,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         background-color: rgba(187, 187, 187, 0.3);
         border-radius: 20px;
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 20px;
+        right: 20px;
         z-index: 99;
         background-image: url("img/wb_sunny_icon.png");
         background-repeat: no-repeat;
@@ -961,7 +972,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        /* display: none; */
+        display: none;
         /*undo here when you are ready*/
     }
     
@@ -970,7 +981,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         height: 170px;
         width: 170px;
         border-radius: 100px;
-        border: 1px solid rgb(106, 199, 0);
+        border: 4px solid #505050;
         display: block;
         background-image: url("img/chinedu_gabriel-white-preview.png");
         background-repeat: no-repeat;
@@ -987,6 +998,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0px;
     }
     
     /* div.col-2>div.text-wrapper starts here */
@@ -1017,7 +1029,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* .colored-text h1 starts here */
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
         color: #ffb400;
-        font-size: 20px;
+        /* font-size: 20px; */
+        font-size: 150%;
         font-weight: 700;
         text-transform: uppercase;
     }
@@ -1054,7 +1067,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* div.text-wrapper>p starts here */
     section>div.row-home>div.col-2>div.text-wrapper>p{
         width: 100%;
-        font-size: 13px;
+        /* font-size: 13px; */
+        font-size: 90%;
         line-height: 20px;
     }
     /* div.text-wrapper>p ends here */
@@ -1098,7 +1112,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* section>div.row-about starts here */
     section>div.row-about{
         height: 100vh;
-        width: 70%;
+        width: 100%;
         border:1px solid #1900ff;
         overflow-y: scroll;
         gap: 20px;
@@ -1143,7 +1157,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* div.row-personal-info starts here */
     section>div.row-about>div.row-personal-info{
         border: 1px solid red;
-        height: 60%;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1153,16 +1167,18 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* div.row-personal-info>div.personal-info-wrapper starts here */
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
         border: 1px solid yellow;
-        height: 90%;
-        width: 90%;
+        height: auto;
+        width: 95%;
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
+        padding: 10px 0px;
     }
     /* div.row-personal-info>div.personal-info-wrapper ends here */
     
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>h1{
         /* font-weight: 800; */
+        font-size: 21px;
     }
     
     /*div.personal-info-wrapper>div.list-info starts here*/
@@ -1170,15 +1186,16 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        gap: 90px;
+        gap: 20px;
         border: 1px solid rgb(168, 168, 2);
         height: 60%;
-        width: 90%;
+        width: auto;
     }
     /*div.personal-info-wrapper>div.list-info ends here*/
     
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
-        height: 100%;
+        height: auto;
+        width: auto;
         border: 1px solid rgb(2, 115, 168);
         list-style: none;
         display: flex;
@@ -1189,6 +1206,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li{
         font-weight: 400;
         color: white;
+        width: auto;
+        font-size: 75%;
     }
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li>span{
         /* cursor: none; */
@@ -1235,11 +1254,14 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         flex-flow: column nowrap;
         align-items: center;
         justify-content: space-evenly;
-        height: 70%;
+        gap: 20px;
+        height: auto;
+        padding: 15px 0px;
     }
     
     section>div.row-about>div.my-skills>h1{
         font-weight: 600;
+        font-size: 21px;
     }
     
     /* div.my-skills>div.lang-wrapper starts here */
@@ -1252,19 +1274,21 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         align-items: center;
         align-content: space-evenly;
         gap: 20px;
-        border: 1px solid #ffb400;
+        /* border: 1px solid #ffb400; */
         align-self: center;
+        padding: 20px ;
     }
     
     /* div.lang-wrapper>div.lan starts here */
     section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
         border: 3px solid #ffb400;
-        height: 150px;
-        width: 150px;
-        border-radius: 80px;
+        height: 100px;
+        width: 100px;
+        border-radius: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 13px;
     }
     /* div.lang-wrapper>div.lan ends here */
     /* div.my-skills>div.lang-wrapper ends here */
@@ -1278,29 +1302,33 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     section>div.row-about>div.edu-exp>div.col1{
         border: 1px solid red;
-        /* width: 80%; */
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        flex-flow: column ;
-        height: 60vh;
+        flex-flow: column nowrap;
+        height: auto;
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         border: 1px solid purple;
-        /* height: 30%; */
-        width: 95%;
+        height: auto;
+        width: auto;
+        gap: 20px;
     }
     /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
         border: 1px solid green;
-        width: 45%;
+        width: auto;
+        height: auto;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-around;
+        gap: 20px;
+        padding: 10px ;
     }
     
     /* div.wrapper>div.row>div.icon-wrapper starts here */
@@ -1327,19 +1355,21 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
         background-color: rgba(255, 255, 255, 0.11);
         width: 2px;
-        height: 98px;
+        height: 170px;
         
     }
     /* div.icon-wrapper>div.line ends here */
     
     /* div.col1>div.wrapper>div.row>div.content starts here */
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
-        width: 500px;
-        height: 150px;
+        width: auto;
+        height: auto;
         border: 1px solid red;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
+        padding: 10px 0px;
+        gap: 5px;
     }
     /* div.col1>div.wrapper>div.row>div.content ends here */
     
@@ -1655,7 +1685,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         right: 0;
         left: 0;
         background-color: #222222;
-        /* display: flex; */
+        display: block;
     }
     
     div.mobile-nav>ul{
