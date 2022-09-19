@@ -1186,9 +1186,9 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 25px;
         border: 1px solid rgb(168, 168, 2);
-        height: 60%;
+        height: 39vh;
         width: auto;
     }
     /*div.personal-info-wrapper>div.list-info ends here*/
@@ -1308,6 +1308,9 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         justify-content: space-evenly;
         flex-flow: column nowrap;
         height: auto;
+    }
+    section>div.row-about>div.edu-exp>div.col1>h1{
+        font-size: 21px;
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper{
         display: flex;
