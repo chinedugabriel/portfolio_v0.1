@@ -21,7 +21,7 @@ section{
 }
 
 /* .divider starts here */
-section>div.divider-bg{
+div.divider-bg{
     background-color:#ffb400;
     height: 200%;
     width: 100%;
@@ -31,12 +31,13 @@ section>div.divider-bg{
     rotate: -15deg;
     z-index: -1;
     /* transform: rotate(-15deg); */
-    display: none;/*undo here when you are ready*/
+    /* display: none; */
+    /*undo here when you are ready*/
 }
 /* .divider ends here */
 
 /* profile picture starts here */
-section>div.profile-picture{
+div.profile-picture{
     height: calc(100vh - 80px);
     width: 27%;
     background-image: url("img/chinedu_gabriel-white-preview.png");
@@ -49,7 +50,8 @@ section>div.profile-picture{
     position: fixed;
     top: 40px;
     left: 55px;
-    display: none;/*undo here when you are ready*/
+    /* display: none; */
+    /*undo here when you are ready*/
 }
 /* profile picture ends here */
 
@@ -168,7 +170,7 @@ section>div.row-home>div.col-1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* display: none; */
+    display: none;
 }
 /* .col-1 ends here for mobile profile picture */
 
@@ -228,7 +230,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1>span{
 section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
     height: 49px;
     width: 45px;
-    background-color: #1900ff;
+    /* background-color: #1900ff; */
     display: flex;
     padding-top: 3px;
     align-items: center;
@@ -244,6 +246,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line>.line
 /* div.text-wrapper>p starts here */
 section>div.row-home>div.col-2>div.text-wrapper>p{
     width: 75%;
+    line-height: 25px;
 }
 /* div.text-wrapper>p ends here */
 
@@ -290,7 +293,7 @@ section>div.row-about{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    /* display: none; */
+    display: none;
 }
 
 /* banner-text starts here */
@@ -576,7 +579,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
 
 section>div.row-portfolio>div.project-list{
@@ -609,7 +612,7 @@ section>div.row-portfolio>.portfolio-project{
 
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     border:1px solid #4600c9;
-    /* height: 60%; */
+    height: auto;
     width: 90%;
     display: flex;
     flex-flow: row wrap;
@@ -617,16 +620,98 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     align-items: center;
     align-content: space-evenly;
 }
-
+/* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     border:1px solid #0057c9;
     height: 30%;
     width: 30%;
     background-color: #ffb400;
     border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* .project>div.img starts here */
+.portfolio-project>.portfolio-wrapper>.project>div.img{
+    height: 77%;
+    width: 100%;
+    background-color: #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .project>div.img ends here */
+/* .project>div.content starts here */
+.portfolio-project>.portfolio-wrapper>.project>div.content{
+    height: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+/* .project>div.content ends here */
+/* .project>div.content>p starts here */
+.portfolio-project>.portfolio-wrapper>.project>div.content>p{
+    width: 90%;
+    height: 60%;
+    overflow: hidden;
+}
+/* .project>div.content>p ends here */
 /* section>div.row-portfolio ends here */
 
+/* backdrop to show project details starts here */
+div.display-backdrop{
+    background-color: white;
+    height: 70vh;
+    width: 90%;
+    position: absolute;
+    top: 50;
+    bottom: 15%;
+    left: 50;
+    right: 50;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    /* color: black; */
+    /* display: none; */
+    background-color: #505050;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+div.display-backdrop>
+div.banner-text{
+    width: 60%;
+    justify-content: flex-start;
+}
+
+div.display-backdrop>
+div.banner-text>h1{
+    font-size: 150%;
+
+}
+
+img#project-img{
+    height: 40%;
+    width: 75%;
+}
+
+div.display-backdrop>img#close-sec{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid black;
+}
+
+div.display-backdrop p{
+    width: 90%;
+}
 
 /* ------------------------------------------------- */
 
@@ -833,61 +918,61 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 /* mobile version starts here */
 @media  (max-width: 1019px) {
 
-    section{
+    /* section{ */
         /* height: 90%; */
-        display: flex;
+        /* display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-    }
+    } */
     
     /* .divider starts here */
     section>div.divider-bg{
-        background-color:#ffb400;
+        /* background-color:#ffb400;
         height: 200%;
         width: 100%;
         position: fixed;
         top: -50%;
         left: -85%;
         rotate: -15deg;
-        z-index: -1;
+        z-index: -1; */
         /* transform: rotate(-15deg); */
-        display: none;/*undo here when you are ready*/
+        display: none;
+        /*undo here when you are ready*/
     }
     /* .divider ends here */
     
     /* profile picture starts here */
     section>div.profile-picture{
-        height: calc(100vh - 80px);
+        /* height: calc(100vh - 80px);
         width: 27%;
         background-image: url("img/chinedu_gabriel-white-preview.png");
         background-position: center;
-        /* background-color: red; */
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 30px;
         z-index: 11;
         position: fixed;
         top: 40px;
-        left: 55px;
+        left: 55px; */
         display: none;/*undo here when you are ready*/
     }
     /* profile picture ends here */
     
     /* div.mode-switch starts here */
     section>div.mode-switch{
-        height: 40px;
+        /* height: 40px;
         width: 40px;
         background-color: rgba(187, 187, 187, 0.3);
         border-radius: 20px;
-        position: fixed;
+        position: fixed; */
         top: 20px;
         right: 20px;
-        z-index: 99;
+        /* z-index: 99;
         background-image: url("img/wb_sunny_icon.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 22px;
+        background-size: 22px; */
     }
     /* div.mode-switch ends here */
     
@@ -968,11 +1053,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-home{
         width: auto;
         height: 100%;
-        display: flex;
+        /* display: flex; */
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        display: none;
+        /* display: none; */
         /*undo here when you are ready*/
     }
     
@@ -1417,7 +1502,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         overflow-y: scroll;
         gap: 20px;
         padding-bottom: 50px;
-        display: none;
+        /* display: none; */
     }
     
     section>div.row-portfolio>div.project-list{
@@ -1447,10 +1532,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio>.portfolio-project{
         border:1px solid #00c997;
-        height: 370vh;
+        height: auto;
         /* width: 90%; */
         display: flex;
         justify-content: center;
+        flex-flow: row wrap;
     }
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
@@ -1459,19 +1545,51 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         width: 90%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: space-evenly;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* align-content: space-evenly; */
+        gap: 20px;
+        padding: 20px 0px;
     }
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
         border:1px solid #0057c9;
-        height: 200px;
-        width: 90%;
+        height: 300px;
+        width: 77%;
         background-color: #ffb400;
         border-radius: 5%;
         /* flex: ; */
+        overflow: hidden;
+        display: flex;
+        flex-flow: column nowrap ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+
+    .portfolio-project>.portfolio-wrapper>.project>div.img{
+        height: 60%;
+        width: 100%;
+        background-color: #505050;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-project>.portfolio-wrapper>.project>div.content{
+        height: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .portfolio-project>.portfolio-wrapper>.project>div.content>p{
+        width: 90%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+
     /* section>div.row-portfolio ends here */
     
     
