@@ -155,7 +155,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
     /*undo here when you are ready*/
 }
 
@@ -579,7 +579,7 @@ section>div.row-portfolio{
     border:1px solid #1900ff;
     overflow-y: scroll;
     gap: 20px;
-    /* display: none; */
+    display: none;
 }
 
 section>div.row-portfolio>div.project-list{
@@ -665,6 +665,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
 /* section>div.row-portfolio ends here */
 
 /* backdrop to show project details starts here */
+
 div.display-backdrop{
     background-color: white;
     height: 70vh;
@@ -677,14 +678,25 @@ div.display-backdrop{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* color: black; */
-    /* display: none; */
     background-color: #505050;
     border-radius: 20px;
-    overflow: scroll;
+    /* overflow: scroll; */
+    display: none;
 }
-
+div.display-backdrop>.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 100vh;
+    /* justify-content: space-around; */
+    /* color: black; */
+    /* display: none; */
+    overflow: scroll;
+    /* text-align: center; */
+}
 div.display-backdrop>
 div.banner-text{
     width: 60%;
@@ -693,24 +705,26 @@ div.banner-text{
 
 div.display-backdrop>
 div.banner-text>h1{
-    font-size: 150%;
+    /* font-size: 150%; */
 
 }
 
 img#project-img{
     height: 40%;
-    width: 75%;
+    width: 55%;
+    margin: 20px 0px;
 }
 
 div.display-backdrop>img#close-sec{
     position: absolute;
-    right: 0;
-    top: 0;
-    border: 1px solid black;
+    right: 0px;
+    top: -40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
 }
 
 div.display-backdrop p{
-    width: 90%;
+    width: 40%;
 }
 
 /* ------------------------------------------------- */
@@ -927,24 +941,24 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     } */
     
     /* .divider starts here */
-    section>div.divider-bg{
-        /* background-color:#ffb400;
+    div.divider-bg{
+        background-color:#ffb400;
         height: 200%;
         width: 100%;
         position: fixed;
         top: -50%;
         left: -85%;
         rotate: -15deg;
-        z-index: -1; */
-        /* transform: rotate(-15deg); */
+        z-index: -1;
+        transform: rotate(-15deg);
         display: none;
         /*undo here when you are ready*/
     }
     /* .divider ends here */
     
     /* profile picture starts here */
-    section>div.profile-picture{
-        /* height: calc(100vh - 80px);
+    div.profile-picture{
+        height: calc(100vh - 80px);
         width: 27%;
         background-image: url("img/chinedu_gabriel-white-preview.png");
         background-position: center;
@@ -954,7 +968,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         z-index: 11;
         position: fixed;
         top: 40px;
-        left: 55px; */
+        left: 55px;
         display: none;/*undo here when you are ready*/
     }
     /* profile picture ends here */
@@ -1088,13 +1102,13 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.col-2>div.text-wrapper starts here */
     section>div.row-home>div.col-2>div.text-wrapper{
-        width: 90%;
+        width: 50%;
         height: 90%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 15px;
+        gap: 25px;
         border: 1px solid rgb(106, 199, 0);
         text-align: center;
     }
@@ -1105,7 +1119,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         flex-flow: row nowrap;
         /* align-items:; */
-        gap: 20px;
+        gap: 10px;
         border: 1px solid rgb(199, 0, 149);
         width: 99%;
     }
@@ -1114,10 +1128,10 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* .colored-text h1 starts here */
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
         color: #ffb400;
-        /* font-size: 20px; */
-        font-size: 150%;
+        font-size: 200%;
         font-weight: 700;
         text-transform: uppercase;
+        line-height: 30px;
     }
     /* .colored-text h1 ends here */
     
@@ -1153,8 +1167,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-home>div.col-2>div.text-wrapper>p{
         width: 100%;
         /* font-size: 13px; */
-        font-size: 90%;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 30px;
     }
     /* div.text-wrapper>p ends here */
     
@@ -1165,11 +1179,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         border: 1px solid #ffb400;;
         background-color: transparent;
         border-radius: 25px;
-        width: 175px;
+        width: 200px;
         padding-left: 10px;
         text-align: center;
         color: white;
-        font-size: 11px;
+        font-size: 15px;
         padding-left:20px;
     }
     
@@ -1591,6 +1605,68 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 
 
     /* section>div.row-portfolio ends here */
+
+    /* backdrop to show project details starts here */
+
+div.display-backdrop{
+    background-color: white;
+    height: 70vh;
+    width: 90%;
+    position: absolute;
+    top: 50;
+    bottom: 15%;
+    left: 50;
+    right: 50;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* color: black; */
+    background-color: #505050;
+    border-radius: 20px;
+    /* overflow: scroll; */
+    display: none;
+}
+div.display-backdrop>.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    /* justify-content: space-around; */
+    /* color: black; */
+    /* display: none; */
+    /* overflow: scroll; */
+}
+div.display-backdrop>
+div.banner-text{
+    width: 60%;
+    justify-content: flex-start;
+}
+
+div.display-backdrop>
+div.banner-text>h1{
+    font-size: 150%;
+
+}
+
+img#project-img{
+    height: 40%;
+    width: 75%;
+}
+
+div.display-backdrop>img#close-sec{
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+div.display-backdrop p{
+    width: 90%;
+}
+    /* backdrop to show project details starts here */
     
     
     /* ------------------------------------------------- */
@@ -1800,7 +1876,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     div.mobile-nav{
         border: 1px solid red;
         width: 99%;
-        height: 50px;
+        height: 60px;
         position: absolute;
         bottom: 0;
         right: 0;
