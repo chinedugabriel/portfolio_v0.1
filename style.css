@@ -1325,7 +1325,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         padding-left: 10px;
         text-align: center;
         color: white;
-        font-size: 11px;
+        font-size: 15px;
         padding-left:20px;
     }
     
@@ -1847,11 +1847,11 @@ div.display-backdrop p{
         border: 1px solid #ffb400;
         background-color: transparent;
         border-radius: 25px;
-        width: 175px;
+        width: 200px;
         padding-left: 10px;
         text-align: center;
         color: white;
-        font-size: 11px;
+        font-size: 15px;
         padding-left:20px;
         /* align-self: ; */
     }
