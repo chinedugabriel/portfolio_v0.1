@@ -82,4 +82,48 @@ btn_darkMode.addEventListener("click", changeMode);
 
 // Below includes all veriable for buttons from the desktop home section
 
-let btn_
+let btn_home =document.getElementById("btn-home");
+let btn_about =document.getElementById("btn-about");
+let btn_portfolio =document.getElementById("btn-portfolio");
+let btn_contact =document.getElementById("btn-contact");
+
+// Below includes all section that would be hidden or shown 
+// home section
+let row_home = document.getElementById("row-home");
+// about section
+let row_about = document.getElementById("row-about");
+// portfolio section
+let row_portfolio = document.getElementById("row-portfolio");
+// contact section
+let row_contact = document.getElementById("row-contact");
+
+// Below are the events listers for desktop to toggle the section onclick of any button
+
+btn_home.addEventListener("click",()=>{
+    row_home.style.display = "flex";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "none";
+
+})
+btn_about.addEventListener("click",()=>{
+    row_home.style.display = "none";
+    row_about.style.display = "block";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "none";
+
+})
+btn_portfolio.addEventListener("click",()=>{
+    row_home.style.display = "none";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "block";
+    row_contact.style.display = "none";
+
+})
+btn_contact.addEventListener("click",()=>{
+    row_home.style.display = "none";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "block";
+
+})
