@@ -30,6 +30,9 @@ let btn_downloadCV = document.getElementById("btn-download-cv");
 // btn from list_info to download CV
 let btn_sendMessage = document.getElementById("btn-sendMessage");
 
+// job title from home section veriable
+let job_title = document.getElementById("job-title");
+
 // function to switch mode from light to dark mode
 function changeMode(){
         if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
@@ -45,6 +48,7 @@ function changeMode(){
                 
             }
             btn_downloadCV.style.color = "black";
+            job_title.style.color = "black";
             btn_sendMessage.style.color = "black";
             banner1.style.color = "rgba(68, 68, 68, 0.110)";
             banner2.style.color = "rgba(68, 68, 68, 0.110)";
@@ -63,6 +67,7 @@ function changeMode(){
             }
 
             btn_downloadCV.style.color = "white";
+            job_title.style.color = "white";
             btn_sendMessage.style.color = "white";
             banner1.style.color = "rgba(255, 255, 255, 0.185)";
             banner2.style.color = "rgba(255, 255, 255, 0.185)";
@@ -74,3 +79,7 @@ function changeMode(){
 
 changeMode();
 btn_darkMode.addEventListener("click", changeMode);
+
+// Below includes all veriable for buttons from the desktop home section
+
+let btn_
