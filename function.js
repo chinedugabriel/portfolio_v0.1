@@ -33,6 +33,12 @@ let btn_sendMessage = document.getElementById("btn-sendMessage");
 // job title from home section veriable
 let job_title = document.getElementById("job-title");
 
+// below are detail paragraphs from contact section
+let p_address = document.getElementById("address-p")
+let p_mail = document.getElementById("mail-p")
+let p_call = document.getElementById("call-p")
+
+
 // function to switch mode from light to dark mode
 function changeMode(){
         if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
@@ -53,6 +59,9 @@ function changeMode(){
             banner1.style.color = "rgba(68, 68, 68, 0.110)";
             banner2.style.color = "rgba(68, 68, 68, 0.110)";
             banner3.style.color = "rgba(68, 68, 68, 0.110)";
+            p_address.style.color = "rgba(68, 68, 68, 0.820)";
+            p_mail.style.color = "rgba(68, 68, 68, 0.820)";
+            p_call.style.color = "rgba(68, 68, 68, 0.820)";
         }else{
             btn_darkMode.style.backgroundImage = 'url("img/wb_sunny_icon.png")';
             bodyTag.style.backgroundColor = 'black';
@@ -72,7 +81,10 @@ function changeMode(){
             banner1.style.color = "rgba(255, 255, 255, 0.185)";
             banner2.style.color = "rgba(255, 255, 255, 0.185)";
             banner3.style.color = "rgba(255, 255, 255, 0.185)";
-            
+            // 
+            p_address.style.color = "rgba(255, 255, 255, 0.712)";
+            p_mail.style.color = "rgba(255, 255, 255, 0.712)";
+            p_call.style.color = "rgba(255, 255, 255, 0.712)";
         }
         // console.log('working');
 }
@@ -86,6 +98,12 @@ let btn_home =document.getElementById("btn-home");
 let btn_about =document.getElementById("btn-about");
 let btn_portfolio =document.getElementById("btn-portfolio");
 let btn_contact =document.getElementById("btn-contact");
+// Below includes all veriable for buttons from the mobile home section
+
+let mobile_btn_home =document.getElementById("mobile-btn-home");
+let mobile_btn_about =document.getElementById("mobile-btn-about");
+let mobile_btn_portfolio =document.getElementById("mobile-btn-portfolio");
+let mobile_btn_contact =document.getElementById("mobile-btn-contact");
 
 // Below includes all section that would be hidden or shown 
 // home section
@@ -121,6 +139,59 @@ btn_portfolio.addEventListener("click",()=>{
 
 })
 btn_contact.addEventListener("click",()=>{
+    row_home.style.display = "none";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "block";
+
+})
+// Below are the events listers for mobile to toggle the section onclick of any button
+
+mobile_btn_home.addEventListener("click",()=>{
+    mobile_btn_home.style.backgroundColor="#ffb400";
+    mobile_btn_about.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_portfolio.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_contact.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    // 
+    row_home.style.display = "flex";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "none";
+
+})
+mobile_btn_about.addEventListener("click",()=>{
+    mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_about.style.backgroundColor="#ffb400";
+    mobile_btn_portfolio.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_contact.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    // 
+    row_home.style.display = "none";
+    row_about.style.display = "block";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "none";
+
+})
+mobile_btn_portfolio.addEventListener("click",()=>{
+    // rgba(187, 187, 187, 0.3)
+    mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_about.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_portfolio.style.backgroundColor="#ffb400";
+
+    mobile_btn_contact.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    // 
+    row_home.style.display = "none";
+    row_about.style.display = "none";
+    row_portfolio.style.display = "block";
+    row_contact.style.display = "none";
+
+})
+mobile_btn_contact.addEventListener("click",()=>{
+    mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_about.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+    mobile_btn_portfolio.style.backgroundColor="rgba(187, 187, 187, 0.3)";
+
+    mobile_btn_contact.style.backgroundColor="#ffb400";
+    // 
     row_home.style.display = "none";
     row_about.style.display = "none";
     row_portfolio.style.display = "none";
