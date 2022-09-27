@@ -932,13 +932,14 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 /* mobile version starts here */
 @media  (max-width: 1019px) {
 
-    /* section{ */
-        /* height: 90%; */
-        /* display: flex;
+    section{
+        height: 100vh;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-    } */
+        /* padding: 10px 0px; */
+    }
     
     /* .divider starts here */
     div.divider-bg{
@@ -1066,11 +1067,12 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* div.row-home starts here */
     section>div.row-home{
         width: auto;
-        height: 100%;
+        height: auto;
         /* display: flex; */
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        gap: 20px;
         /* display: none; */
         /*undo here when you are ready*/
     }
@@ -1093,7 +1095,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-home>div.col-2{
         border: 1px solid rgb(0, 70, 199);
         width: 99%;
-        height: 55%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1102,15 +1104,16 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.col-2>div.text-wrapper starts here */
     section>div.row-home>div.col-2>div.text-wrapper{
-        width: 50%;
-        height: 90%;
+        width: auto;
+        height: auto;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         border: 1px solid rgb(106, 199, 0);
         text-align: center;
+        padding: 15px 0px;
     }
     /* div.col-2>div.text-wrapper ends here */
     
@@ -1120,18 +1123,19 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         flex-flow: row nowrap;
         /* align-items:; */
         gap: 10px;
-        border: 1px solid rgb(199, 0, 149);
-        width: 99%;
+        border: 1px solid rgb(119, 0, 199);
+        width: 90%;
     }
     /* .colored-text ends here */
     
     /* .colored-text h1 starts here */
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1{
         color: #ffb400;
-        font-size: 200%;
+        font-size: 150%;
         font-weight: 700;
         text-transform: uppercase;
-        line-height: 30px;
+        line-height: 20px;
+        width:auto;
     }
     /* .colored-text h1 ends here */
     
@@ -1165,10 +1169,10 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.text-wrapper>p starts here */
     section>div.row-home>div.col-2>div.text-wrapper>p{
-        width: 100%;
+        width: 97%;
         /* font-size: 13px; */
-        font-size: 15px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 20px;
     }
     /* div.text-wrapper>p ends here */
     
@@ -1179,11 +1183,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         border: 1px solid #ffb400;;
         background-color: transparent;
         border-radius: 25px;
-        width: 200px;
+        width: 190px;
         padding-left: 10px;
         text-align: center;
         color: white;
-        font-size: 15px;
+        font-size: 13px;
         padding-left:20px;
     }
     
@@ -1210,8 +1214,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     /* section>div.row-about starts here */
     section>div.row-about{
-        height: 100vh;
-        width: 100%;
+        height: auto;
+        width: auto;
         border:1px solid #1900ff;
         overflow-y: scroll;
         gap: 20px;
@@ -1222,7 +1226,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* === banner-text starts here === */
     div.banner-text{
         border: 1px solid green;
-        width: 99.8%;
+        width: auto;
         height: 20%;
         /* text-align: center; */ 
         display: flex;
@@ -1257,6 +1261,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.row-personal-info{
         border: 1px solid red;
         height: auto;
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1354,6 +1359,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         align-items: center;
         justify-content: space-evenly;
         gap: 20px;
+        width: auto;
         height: auto;
         padding: 15px 0px;
     }
@@ -1511,7 +1517,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio{
         height: auto;
-        width: 99%;
+        width: auto;
         border:1px solid #1900ff;
         overflow-y: scroll;
         gap: 20px;
@@ -1520,7 +1526,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     
     section>div.row-portfolio>div.project-list{
-        width: 100%;
+        width: auto;
         height: 65px;
         display: flex;
         justify-content: center;
@@ -1847,11 +1853,11 @@ div.display-backdrop p{
         border: 1px solid #ffb400;
         background-color: transparent;
         border-radius: 25px;
-        width: 200px;
+        width: 190px;
         padding-left: 10px;
         text-align: center;
         color: white;
-        font-size: 15px;
+        font-size: 13px;
         padding-left:20px;
         /* align-self: ; */
     }
@@ -1878,7 +1884,8 @@ div.display-backdrop p{
         width: 99%;
         height: 60px;
         position: absolute;
-        top: 96.7%;
+        /* top: 97.7%; */
+        bottom: -31px;
         right: 50%;
         left: 50%;
         /* margin-top: auto; */
