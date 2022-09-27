@@ -125,13 +125,13 @@ section>div.nav>ul>li:first-child{
 section>div.nav>ul>li:first-child span{
     display: block;
 }
-section>div.nav>ul>li:hover{
+/* section>div.nav>ul>li:hover{
     width: 150px;
     padding-left:28px;
 }
 section>div.nav>ul>li:hover span{
     display: block;
-}
+} */
 
 
 
