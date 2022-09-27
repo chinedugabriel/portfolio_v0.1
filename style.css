@@ -95,6 +95,7 @@ section>div.nav>ul{
     flex-flow: column nowrap;
     align-items: flex-end;
     justify-content: space-evenly;
+    /* transition: 1ms; */
 }
 
 section>div.nav>ul>li{
@@ -104,12 +105,37 @@ section>div.nav>ul>li{
     border: 1px solid rgb(106, 199, 0);
     background-color: #ffb400;
     border-radius: 25px;
-    width: 150px;
-    padding-left: 10px;
+    width: auto;
+    /* padding-left: 10px; */
     text-align: center;
-    padding-left:28px;
+    /* padding-left:28px; */
     font-size: 15px;
+    transition-duration: 550ms;
+    transition-timing-function: ease-in-out;
 }
+
+li>span{
+    display: none;
+}
+
+section>div.nav>ul>li:first-child{
+    width: 150px;
+    padding-left:28px;
+}
+section>div.nav>ul>li:first-child span{
+    display: block;
+}
+section>div.nav>ul>li:hover{
+    width: 150px;
+    padding-left:28px;
+}
+section>div.nav>ul>li:hover span{
+    display: block;
+}
+
+
+
+
 /* collective icon style */
 section>div.nav>ul>li>div{
     height: 40px;
@@ -204,6 +230,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
     /* align-items:; */
     gap: 20px;
     border: 1px solid rgb(199, 0, 149);
+    
 }
 /* .colored-text ends here */
 
@@ -1654,7 +1681,6 @@ div.banner-text{
 div.display-backdrop>
 div.banner-text>h1{
     font-size: 150%;
-
 }
 
 img#project-img{
