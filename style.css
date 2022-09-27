@@ -1104,7 +1104,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.col-2>div.text-wrapper starts here */
     section>div.row-home>div.col-2>div.text-wrapper{
-        width: auto;
+        width: 99%;
         height: auto;
         display: flex;
         flex-flow: column nowrap;
@@ -1125,6 +1125,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         gap: 10px;
         border: 1px solid rgb(119, 0, 199);
         width: 90%;
+        padding: 10px 0px;
     }
     /* .colored-text ends here */
     
@@ -1903,8 +1904,8 @@ div.display-backdrop p{
         height: 100%;
     }
 
-    div.mobile-nav>ul>li{
-
+    div.mobile-nav>ul>li:first-child>div{
+        background-color: #ffb400;
     }
     /* collective icon style */
     div.mobile-nav>ul>li>div{
