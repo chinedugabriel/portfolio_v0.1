@@ -35,8 +35,9 @@ let job_title = document.getElementById("job-title");
 
 // below are detail paragraphs from contact section
 let p_address = document.getElementById("address-p")
-let p_mail = document.getElementById("mail-p")
-let p_call = document.getElementById("call-p")
+let p_mail = document.getElementById("mail-p");
+let p_call = document.getElementById("call-p");
+
 
 
 // function to switch mode from light to dark mode
@@ -53,6 +54,7 @@ function changeMode(){
                 il_list_Li2[i].style.color = "black";
                 
             }
+
             btn_downloadCV.style.color = "black";
             job_title.style.color = "black";
             btn_sendMessage.style.color = "black";
