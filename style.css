@@ -667,19 +667,22 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     overflow: hidden;
     display: flex;
     flex-flow: column nowrap ;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 /* .project>div.img starts here */
 .portfolio-project>.portfolio-wrapper>.project>div.img{
-    height: 50%;
+    height: 10%;
     width: 100%;
     background-color: #505050;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 /* .project>div.img ends here */
 /* .project>div.content starts here */
@@ -695,8 +698,8 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
 /* .project>div.content>p starts here */
 .portfolio-project>.portfolio-wrapper>.project>div.content>p{
     width: 90%;
-    height: 60%;
-    overflow: hidden;
+    height: auto;
+    /* overflow: hidden; */
 }
 /* .project>div.content>p ends here */
 /* section>div.row-portfolio ends here */
@@ -1644,7 +1647,9 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     .portfolio-project>.portfolio-wrapper>.project>div.content>p{
         width: 90%;
         height: 60%;
-        overflow: hidden;
+        font-size: 14px;
+        /* overflow: hidden;
+        overflow: scroll; */
     }
 
 
