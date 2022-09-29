@@ -102,6 +102,9 @@ let btn_portfolio =document.getElementById("btn-portfolio");
 let span_btn_portfolio =document.getElementById("desk-btn-portfolio");
 let btn_contact =document.getElementById("btn-contact");
 let span_btn_contact =document.getElementById("desk-btn-contact");
+
+// this button is linked to "MORE ABOUT ME" button from the home page section
+let more_btn_about =document.getElementById("btn-home-about");
 // Below includes all veriable for buttons from the mobile home section
 
 let mobile_btn_home =document.getElementById("mobile-btn-home");
@@ -129,21 +132,33 @@ btn_home.addEventListener("click",()=>{
     row_contact.style.display = "none";
 
     // this section is used to increase the width, add padding and display the span tag that holds the text for the home_btn
-    btn_home.style.width = "150px";
-    btn_home.style.paddingLeft = "28px";
+    
+    btn_home.style.backgroundColor = "#ffb400";
+    btn_home.getElementsByTagName("div")[0].style.backgroundColor ="#ffb400";
+    btn_home.style.width = "125px";
+    btn_home.style.paddingLeft = "20px";
     span_btn_home.style.display = "block";
 
-    // muted
+    // muted #4b4b4b50
+    btn_about.style.backgroundColor = "#4b4b4b50";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
     btn_about.style.width = "auto";
     btn_about.style.paddingLeft = "0px";
     span_btn_about.style.display = "none";
 
     // muted
+    btn_portfolio.style.backgroundColor = "#4b4b4b50";
+    btn_portfolio.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
     btn_portfolio.style.width = "auto";
     btn_portfolio.style.paddingLeft = "0px";
     span_btn_portfolio.style.display = "none";
 
     // muted
+    btn_contact.style.backgroundColor = "#4b4b4b50";
+    btn_contact.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
     btn_contact.style.width = "auto";
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
@@ -157,21 +172,74 @@ btn_about.addEventListener("click",()=>{
     btn_home.style.width = "40px";
 
     // muted
+    btn_home.style.backgroundColor = "#4b4b4b50";
+    btn_home.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
     btn_home.style.width = "auto";
     btn_home.style.paddingLeft = "0px";
     span_btn_home.style.display = "none";
 
     // this section is used to increase the width, add padding and display the span tag that holds the text for the about_btn
-    btn_about.style.width = "150px";
-    btn_about.style.paddingLeft = "28px";
+    btn_about.style.backgroundColor = "#ffb400";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor = "#ffb400";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor = "transparent";
+    btn_about.style.width = "125px";
+    btn_about.style.paddingLeft = "20px";
     span_btn_about.style.display = "block";
 
     // muted
+    btn_portfolio.style.backgroundColor = "#4b4b4b50";
+    btn_portfolio.getElementsByTagName("div")[0].style.backgroundColor ="#4b4b4b50";
+
     btn_portfolio.style.width = "auto";
     btn_portfolio.style.paddingLeft = "0px";
     span_btn_portfolio.style.display = "none";
 
     // muted
+    btn_contact.style.backgroundColor = "#4b4b4b50";
+    btn_contact.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
+    btn_contact.style.width = "auto";
+    btn_contact.style.paddingLeft = "0px";
+    span_btn_contact.style.display = "none";
+
+})
+more_btn_about.addEventListener("click",()=>{
+    // this function calls the about section on the page
+    row_home.style.display = "none";
+    row_about.style.display = "block";
+    row_portfolio.style.display = "none";
+    row_contact.style.display = "none";
+    btn_home.style.width = "40px";
+
+    // muted
+    btn_home.style.backgroundColor = "#4b4b4b50";
+    btn_home.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
+    btn_home.style.width = "auto";
+    btn_home.style.paddingLeft = "0px";
+    span_btn_home.style.display = "none";
+
+    // this section is used to increase the width, add padding and display the span tag that holds the text for the about_btn
+    btn_about.style.backgroundColor = "#ffb400";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor = "#ffb400";
+
+    btn_about.style.width = "125px";
+    btn_about.style.paddingLeft = "20px";
+    span_btn_about.style.display = "block";
+
+    // muted
+    btn_portfolio.style.backgroundColor = "#4b4b4b50";
+    btn_portfolio.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
+    btn_portfolio.style.width = "auto";
+    btn_portfolio.style.paddingLeft = "0px";
+    span_btn_portfolio.style.display = "none";
+
+    // muted
+    btn_contact.style.backgroundColor = "#4b4b4b50";
+    btn_contact.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
+
     btn_contact.style.width = "auto";
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
@@ -185,21 +253,31 @@ btn_portfolio.addEventListener("click",()=>{
     row_contact.style.display = "none";
 
     // muted
+    btn_home.style.backgroundColor = "#4b4b4b50";
+    btn_home.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
     btn_home.style.width = "auto";
     btn_home.style.paddingLeft = "0px";
     span_btn_home.style.display = "none";
 
     // muted
+    btn_about.style.backgroundColor = "#4b4b4b50";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor = "#4b4b4b50";
     btn_about.style.width = "auto";
     btn_about.style.paddingLeft = "0px";
     span_btn_about.style.display = "none";
     
     // this section is used to increase the width, add padding and display the span tag that holds the text for the portfolio_btn
-    btn_portfolio.style.width = "150px";
-    btn_portfolio.style.paddingLeft = "28px";
+    btn_portfolio.style.backgroundColor = "#ffb400";
+    btn_portfolio.getElementsByTagName("div")[0].style.backgroundColor = "#ffb400";
+
+    btn_portfolio.style.width = "125px";
+    btn_portfolio.style.paddingLeft = "20px";
     span_btn_portfolio.style.display = "block";
 
     // muted
+    btn_contact.style.backgroundColor = "#4b4b4b50";
+    btn_contact.getElementsByTagName("div")[0].style.backgroundColor =  "#4b4b4b50";
+
     btn_contact.style.width = "auto";
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
@@ -213,25 +291,36 @@ btn_contact.addEventListener("click",()=>{
     row_contact.style.display = "block";
 
     // muted
+    btn_home.style.backgroundColor = "#4b4b4b50";
+    btn_home.getElementsByTagName("div")[0].style.backgroundColor =  "#4b4b4b50";
     btn_home.style.width = "auto";
     btn_home.style.paddingLeft = "0px";
     span_btn_home.style.display = "none";
 
     // muted
+    btn_about.style.backgroundColor = "#4b4b4b50";
+    btn_about.getElementsByTagName("div")[0].style.backgroundColor =  "#4b4b4b50";
     btn_about.style.width = "auto";
     btn_about.style.paddingLeft = "0px";
     span_btn_about.style.display = "none";
     
     // muted
+    btn_portfolio.style.backgroundColor = "#4b4b4b50";
+    btn_portfolio.getElementsByTagName("div")[0].style.backgroundColor =  "#4b4b4b50";
     btn_portfolio.style.width = "auto";
     btn_portfolio.style.paddingLeft = "0px";
     span_btn_portfolio.style.display = "none";
 
     // this section is used to increase the width, add padding and display the span tag that holds the text for the contact_btn
-    btn_contact.style.width = "150px";
-    btn_contact.style.paddingLeft = "28px";
+    btn_contact.style.backgroundColor = "#ffb400";
+    btn_contact.getElementsByTagName("div")[0].style.backgroundColor = "#ffb400";
+    btn_contact.style.width = "125px";
+    btn_contact.style.paddingLeft = "20px";
     span_btn_contact.style.display = "block";
 })
+
+
+
 // Below are the events listers for mobile to toggle the section onclick of any button
 
 mobile_btn_home.addEventListener("click",()=>{
