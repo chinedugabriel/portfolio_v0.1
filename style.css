@@ -667,10 +667,11 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     overflow: hidden;
     display: flex;
     flex-flow: column nowrap ;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     position: relative;
+    padding-top: 20%;
 }
 
 /* .project>div.img starts here */
@@ -1614,39 +1615,39 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
-        border:1px solid #0057c9;
+        /* border:1px solid #0057c9; */
         height: 300px;
         width: 77%;
-        background-color: #ffb400;
-        border-radius: 5%;
+        /* background-color: #ffb400;
+        border-radius: 5%; */
         /* flex: ; */
-        overflow: hidden;
+        /* overflow: hidden;
         display: flex;
         flex-flow: column nowrap ;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
 
     .portfolio-project>.portfolio-wrapper>.project>div.img{
-        height: 60%;
+        /* height: 60%;
         width: 100%;
         background-color: #505050;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
     .portfolio-project>.portfolio-wrapper>.project>div.content{
-        height: 40%;
+        /* height: 40%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         gap: 10px;
-        padding: 10px 0px;
+        padding: 10px 0px; */
     }
     .portfolio-project>.portfolio-wrapper>.project>div.content>p{
         width: 90%;
-        height: 60%;
+        /* height: 60%; */
         font-size: 14px;
         /* overflow: hidden;
         overflow: scroll; */
@@ -1934,6 +1935,7 @@ div.display-backdrop p{
         transform: translate(-50%, -50%);
         background-color: #222222;
         display: block;
+        z-index: 99;
     }
     
     div.mobile-nav>ul{
