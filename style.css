@@ -660,18 +660,17 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
 /* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     border:1px solid #0057c9;
-    height: 400px;
+    height: auto;
     width: 30%;
     background-color: #ffb400;
     border-radius: 5%;
     overflow: hidden;
     display: flex;
     flex-flow: column nowrap ;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
-    padding-top: 20%;
+    padding: 38px 0px;
 }
 
 /* .project>div.img starts here */
@@ -684,16 +683,17 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     align-items: center;
     position: absolute;
     top: 0;
+    color: #ffffff;
 }
 /* .project>div.img ends here */
 /* .project>div.content starts here */
 .portfolio-project>.portfolio-wrapper>.project>div.content{
-    height: 40%;
+    height: 60%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     gap: 10px;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 /* .project>div.content ends here */
 /* .project>div.content>p starts here */
@@ -703,6 +703,32 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     /* overflow: hidden; */
 }
 /* .project>div.content>p ends here */
+/* .project>div.content>div starts here */
+.portfolio-project>.portfolio-wrapper>.project>div.content>div{
+    width: 90%;
+    height: auto;
+    /* overflow: hidden; */
+    border:1px solid #0057c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio-project>.portfolio-wrapper>.project>div.content>div>a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.portfolio-project>.portfolio-wrapper>.project>div.content>div>a:hover{
+    background-color: #222222;
+    color: #ffb400;
+}
+/* .project>div.content>p ends here */
+
+
 /* section>div.row-portfolio ends here */
 
 /* backdrop to show project details starts here */
@@ -1638,12 +1664,12 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         align-items: center; */
     }
     .portfolio-project>.portfolio-wrapper>.project>div.content{
-        /* height: 40%;
-        display: flex;
+        height: 70%;
+        /* display: flex;
         flex-flow: column nowrap;
-        align-items: center;
+        align-items: center; */
         gap: 10px;
-        padding: 10px 0px; */
+        /* padding: 10px 0px; */
     }
     .portfolio-project>.portfolio-wrapper>.project>div.content>p{
         width: 90%;
@@ -1653,69 +1679,22 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         overflow: scroll; */
     }
 
+    .portfolio-project>.portfolio-wrapper>.project>div.content>div>a{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+        padding: 7px 5px;
+    }
 
+    .portfolio-project>.portfolio-wrapper>.project>div.content>div>a:hover{
+        background-color: #222222;
+        color: #ffb400;
+    }
+    
     /* section>div.row-portfolio ends here */
 
-    /* backdrop to show project details starts here */
-
-div.display-backdrop{
-    background-color: white;
-    height: 70vh;
-    width: 90%;
-    position: absolute;
-    top: 50;
-    bottom: 15%;
-    left: 50;
-    right: 50;
-    display: flex;
-    flex-flow: column nowrap;
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    /* color: black; */
-    background-color: #505050;
-    border-radius: 20px;
-    /* overflow: scroll; */
-    display: none;
-}
-div.display-backdrop>.wrapper{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    /* justify-content: space-around; */
-    /* color: black; */
-    /* display: none; */
-    /* overflow: scroll; */
-}
-div.display-backdrop>
-div.banner-text{
-    width: 60%;
-    justify-content: flex-start;
-}
-
-div.display-backdrop>
-div.banner-text>h1{
-    font-size: 150%;
-}
-
-img#project-img{
-    height: 40%;
-    width: 75%;
-}
-
-div.display-backdrop>img#close-sec{
-    position: absolute;
-    right: 0px;
-    top: -40px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-}
-
-div.display-backdrop p{
-    width: 90%;
-}
-    /* backdrop to show project details starts here */
+    
     
     
     /* ------------------------------------------------- */
