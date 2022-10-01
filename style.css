@@ -39,13 +39,14 @@ div.divider-bg{
 /* profile picture starts here */
 div.profile-picture{
     height: calc(100vh - 80px);
-    width: 27%;
+    width: 30%;
     background-image: url("img/chinedu_gabriel-white-preview.png");
     background-position: center;
     /* background-color: red; */
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.664);
     z-index: 11;
     position: fixed;
     top: 40px;
