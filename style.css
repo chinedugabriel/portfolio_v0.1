@@ -962,6 +962,41 @@ section>div.row-contact>div.row-form>.col1>.info>.map-text>p.details{
 }
 /* .info>.map-text>p.details ends here */
 
+/* social-icons starts here */
+div.social-icons{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 5px 0px;
+}
+div.social-icons>a>div{
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-color: #8888888e;
+
+}
+div.social-icons>a>.icon-1{
+    background-image: url("img/git_logo_logos_icon.png");
+}
+div.social-icons>a>.icon-2{
+    background-image: url("img/twitter.png");
+}
+div.social-icons>a>.icon-3{
+    background-image: url("img/linkedin_social_icon.png");
+
+}
+div.social-icons>a>.icon-4{
+    background-image: url("img/whatsapp_icon.png");
+}
+/* social-icons ends here */
+
 /* section>div.row-contact>div.row-form>.col2 starts here */
 section>div.row-contact>div.row-form>.col2{
     border:1px solid #a80000;
@@ -1046,7 +1081,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     width: 40px ;
     background-color: #ffb400;
     border-radius: 20px;
-    background-image: url("img/file_download_icon.png");
+    background-image: url("img/send_email_icon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
