@@ -887,7 +887,7 @@ section>div.row-contact>div.row-form>.col1{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 400px;
+    height: 450px;
 }
 section>div.row-contact>div.row-form>.col1>h2{
     border:1px solid #e688ce;
