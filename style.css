@@ -124,6 +124,9 @@ section>div.nav>ul>li:first-child{
     padding-left:28px;
     background-color: #ffb400;
 }
+section>div.nav>ul>li:first-child div{
+    background-color: #ffb400;
+}
 
 section>div.nav>ul>li:first-child span{
     display: block;
