@@ -581,14 +581,14 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: #8888883b;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
     font-size: 16px;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
     font-size: 13px;
-    color: #a0a0a0d7;
+    color: #888888d8;
 }
 
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>p{
@@ -655,7 +655,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     align-items: center;
     align-content: space-evenly;
     padding: 20px 0px;
-    gap: 20px;
+    row-gap: 35px;
 }
 /* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
@@ -676,6 +676,8 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
+    transition-duration: 550ms;
+    transition-timing-function: ease-in-out;
 }
 .portfolio-project>.portfolio-wrapper>.project:hover{
     /* display: flex; */
@@ -765,6 +767,8 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     color: black;
     padding: 7px 10px;
     font-size: 15px;
+    transition-duration: 550ms;
+    transition-timing-function: ease-in-out;
 }
 
 .portfolio-project>.portfolio-wrapper>.project:hover div.content{
@@ -1607,14 +1611,14 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         align-items: center;
         justify-content: center;
         font-size: 10px;
-        background-color: rgba(255, 255, 255, 0.11);
+        /* background-color: #8888883b; */
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
         font-size: 16px;
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
         font-size: 13px;
-        color: #ffffffc2;
+        /* color: #ffffffc2; */
     }
     
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>p{
@@ -1678,7 +1682,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
-        border:1px solid #4600c9;
+        /* border:1px solid #4600c9; */
         height: auto;
         width: 90%;
         display: flex;
