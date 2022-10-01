@@ -637,6 +637,10 @@ section>div.row-portfolio>div.project-list>ul{
     width: 40%;
     list-style: none;
 }
+
+section>div.row-portfolio>div.project-list>ul>li:first-child{
+    color: #ffb400;
+}
 /* div.project-list>ul ends here */
 
 
