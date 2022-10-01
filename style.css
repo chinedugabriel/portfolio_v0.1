@@ -660,9 +660,11 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
 /* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     border:1px solid #0057c9;
-    height: auto;
-    width: 30%;
-    background-color: #ffb400;
+    /* height: auto; */
+    height: 300px;
+    /* width: 30%; */
+    width: 329px;
+    background-color: #C8C8C8;
     border-radius: 5%;
     overflow: hidden;
     display: flex;
@@ -671,29 +673,72 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     align-items: center;
     position: relative;
     padding: 38px 0px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.portfolio-project>.portfolio-wrapper>.project:hover{
+    /* display: flex; */
+    background-image: none !important;
+    background-color: #ffb400 !important;
+    /* cursor: pointer; */
 }
 
 /* .project>div.img starts here */
 .portfolio-project>.portfolio-wrapper>.project>div.img{
-    height: 10%;
-    width: 100%;
-    background-color: #505050;
+    /* height: 100%; */
+    /* width: 100%; */
+    background-color: #50505075;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     color: #ffffff;
+    /* position: relative; */
 }
+
+.portfolio-project>.portfolio-wrapper>.project:hover div.img{
+    /* height: 10%; */
+    /* background-image: url("img_project/abdieloils.png"); */
+    display: none;
+}
+
+.portfolio-project>.portfolio-wrapper>.project>div.img>div#close-img-project{
+    /* background-image: url('img/close-icon.png'); */
+    /* background-position: center;
+    background-size: cover; */
+    height: 40px;
+    width: 170px;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    background-color: #ffb400;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+/* .portfolio-project>.portfolio-wrapper>.project>div.img:hover div{
+    display: block;
+} */
+/* .portfolio-project>.portfolio-wrapper>.project>div.img div:active div.img{
+    height: 10%;
+} */
+
 /* .project>div.img ends here */
 /* .project>div.content starts here */
 .portfolio-project>.portfolio-wrapper>.project>div.content{
-    height: 60%;
+    height: 70%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-around;
     gap: 10px;
     /* padding: 10px 0px; */
+    display: none;
 }
 /* .project>div.content ends here */
 /* .project>div.content>p starts here */
@@ -720,6 +765,11 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     color: black;
     padding: 7px 10px;
     font-size: 15px;
+}
+
+.portfolio-project>.portfolio-wrapper>.project:hover div.content{
+    display: flex;
+    background-image: none;
 }
 
 .portfolio-project>.portfolio-wrapper>.project>div.content>div>a:hover{
@@ -1642,8 +1692,8 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
         /* border:1px solid #0057c9; */
-        height: 300px;
-        width: 77%;
+        /* height: 300px;
+        width: 329px; */
         /* background-color: #ffb400;
         border-radius: 5%; */
         /* flex: ; */
