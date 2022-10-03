@@ -424,7 +424,10 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-i
 }
 
 /* div.personal-info-wrapper>button Starts here*/
-section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button{
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>a{
+    text-decoration: none;
+}
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>a>button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -437,11 +440,11 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button{
     color: white;
     font-size: 15px;
     padding-left:20px;
+    cursor: pointer;
 }
 
 
-
-section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.icon{
+section>div.row-about>div.row-personal-info>div.personal-info-wrapper>a>button>.icon{
     height: 40px;
     width: 40px ;
     background-color: #ffb400;
@@ -1094,6 +1097,11 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 /* .col2>form>.btn-wrapper>button>.icon ends here */
 /* div.row-form>.col2 ends here */
 
+/* General Buttons hover Effect*/
+button:hover{
+    background-color: #ffb400 !important;
+}
+/* General Buttons ends hover Effect*/
 
 /* ========================================================== */
 
@@ -1488,7 +1496,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     }
     
     /* div.personal-info-wrapper>button Starts here*/
-    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button{
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>a>button{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1505,7 +1513,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     
     
-    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.icon{
+    section>div.row-about>div.row-personal-info>div.personal-info-wrapper>a>button>.icon{
         height: 40px;
         width: 40px ;
         background-color: #ffb400;
