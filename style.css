@@ -3,12 +3,39 @@ body{
     background-color: black;
     color: white;
     position: relative;
+    overflow: hidden;
+    /* height: 100vh; */
+    cursor:url('img/pointer.png'), auto ;
 }
 
 *{
     padding: 0px;
     margin: 0px;
 }
+
+/*custom cursor starts here*/
+.cursor{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ffb3005d;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    z-index: 200;
+    pointer-events: none;/* this allows the cursor to be click able*/
+}
+/* .cursor::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #ffb3005d;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+} */
+/*custom cursor ends here*/
 
 section{
     height: 99vh;
@@ -1116,6 +1143,12 @@ button:hover{
         align-items: center;
         /* padding: 10px 0px; */
     }
+
+    /*custom cursor starts here*/
+.cursor{
+display: none;
+}
+/*custom cursor ends here*/
     
     /* .divider starts here */
     div.divider-bg{

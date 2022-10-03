@@ -433,14 +433,18 @@ allProject.addEventListener("click",()=>{
 
     }
 
+    // this loops through all the project that has the class vanilla and gives all vanilla class display flex
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "flex";
         
     }
+    // this loops through all the project that has the class wordpress and gives all wordpress class display flex
     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
         portfolio_wrapper_wordpress[v].style.display = "flex";
         
     }
+    // this loops through all the project that has the class design and gives all design class display flex
+
     // for(d = 0; d < portfolio_wrapper_design.length; d++){
     //     portfolio_wrapper_design[d].style.display = "flex";
         
@@ -472,14 +476,18 @@ vanilla.addEventListener("click",()=>{
         // design.style.color = "black";
     }
 
+    // this loops through all the project that has the class vanilla and gives all vanilla class display flex
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "flex";
         
     }
+        // this loops through all the project that has the class wordpress and gives all wordpress class display none
     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
         portfolio_wrapper_wordpress[v].style.display = "none";
         
     }
+
+    // this loops through all the project that has the class design and gives all design class display none
     // for(d = 0; d < portfolio_wrapper_design.length; d++){
     //     portfolio_wrapper_design[d].style.display = "none";
         
@@ -511,14 +519,20 @@ wordpress.addEventListener("click",()=>{
         // design.style.color = "black";
     }
 
+    // this loops through all the project that has the class vanilla and gives all vanilla class display none
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "none";
         
     }
+
+    // this loops through all the project that has the class wordpress and gives all wordpress class display flex
     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
         portfolio_wrapper_wordpress[v].style.display = "flex";
         
     }
+
+    // this loops through all the project that has the class design and gives all design class display none
+
     // for(d = 0; d < portfolio_wrapper_design.length; d++){
     //     portfolio_wrapper_design[d].style.display = "none";
         
@@ -572,3 +586,21 @@ wordpress.addEventListener("click",()=>{
         
 //     }
 // });
+
+
+// This section holds the mouse effect
+let cursor = document.querySelector(".cursor");
+
+bodyTag.addEventListener("mouseover", ()=>{
+    // this event displays the mouse and makes the div.cursor to follow the cursor pointer
+    cursor.setAttribute("style", "display: 'block;'");
+    document.addEventListener("mousemove", e =>{
+        cursor.setAttribute("style", "top: "+(e.pageY - 11)+"px; left: "+(e.pageX - 11)+"px;")
+    
+    })
+})
+
+bodyTag.addEventListener("mouseout", ()=>{
+    cursor.setAttribute("style", "display: 'none;'")
+
+})
