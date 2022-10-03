@@ -34,10 +34,25 @@ let btn_sendMessage = document.getElementById("btn-sendMessage");
 let job_title = document.getElementById("job-title");
 
 // below are detail paragraphs from contact section
-let p_address = document.getElementById("address-p")
+let p_address = document.getElementById("address-p");
 let p_mail = document.getElementById("mail-p");
 let p_call = document.getElementById("call-p");
 
+// This section contains the portfolio navigation to select a given type of project
+// on click of a list control filter all hard coded project by class list vanilla or wordpress or design
+
+let portfolio_wrapper = document.getElementById("portfolio-wrapper");
+
+let portfolio_wrapper_vanilla = portfolio_wrapper.getElementsByClassName("vanilla");
+let portfolio_wrapper_wordpress = portfolio_wrapper.getElementsByClassName("wordpress");
+// let portfolio_wrapper_design = portfolio_wrapper.getElementsByClassName("design");
+
+// individual list nav
+
+let allProject = document.getElementById("p1");
+let vanilla = document.getElementById("p2");
+let wordpress = document.getElementById("p3");
+// let design = document.getElementById("p4");
 
 
 // function to switch mode from light to dark mode
@@ -389,30 +404,34 @@ mobile_btn_contact.addEventListener("click",()=>{
 
 });
 
-// This section contains the portfolio navigation to select a given type of project
-// on click of a list control filter all hard coded project by class list vanilla or wordpress or design
 
-let portfolio_wrapper = document.getElementById("portfolio-wrapper");
-
-let portfolio_wrapper_vanilla = portfolio_wrapper.getElementsByClassName("vanilla");
-let portfolio_wrapper_wordpress = portfolio_wrapper.getElementsByClassName("wordpress");
-// let portfolio_wrapper_design = portfolio_wrapper.getElementsByClassName("design");
-
-// individual list nav
-
-let allProject = document.getElementById("p1");
-let vanilla = document.getElementById("p2");
-let wordpress = document.getElementById("p3");
-// let design = document.getElementById("p4");
 
 allProject.addEventListener("click",()=>{
     // portfolio_wrapper_vanilla[a].style.display = "flex";
     // alert("it works");
 
-    allProject.style.color = "#ffb400";
-    vanilla.style.color = "white";
-    wordpress.style.color = "white";
+    // allProject.style.color = "#ffb400";
+    // vanilla.style.color = "white";
+    // wordpress.style.color = "white";
     // design.style.color = "white";
+
+    if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
+
+        // this checks if the page is on light mode or dark mode 
+        // portfolio nav list
+        allProject.style.color = "#ffb400";
+        vanilla.style.color = "white";
+        wordpress.style.color = "white";
+        // design.style.color = "white";
+
+    }else{
+        // portfolio nav list
+        allProject.style.color = "#ffb400";
+        vanilla.style.color = "black";
+        wordpress.style.color = "black";
+        // design.style.color = "black";
+
+    }
 
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "flex";
@@ -430,10 +449,28 @@ allProject.addEventListener("click",()=>{
 
 vanilla.addEventListener("click",()=>{
 
-    allProject.style.color = "white";
-    vanilla.style.color = "#ffb400";
-    wordpress.style.color = "white";
+    // allProject.style.color = "white";
+    // vanilla.style.color = "#ffb400";
+    // wordpress.style.color = "white";
     // design.style.color = "white";
+
+    if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
+
+        // this checks if the page is on light mode or dark mode 
+        // portfolio nav list
+        allProject.style.color = "white";
+        vanilla.style.color = "#ffb400";
+        wordpress.style.color = "white";
+        // design.style.color = "white";
+
+    }else{
+        
+        // portfolio nav list
+        allProject.style.color = "black";
+        vanilla.style.color = "#ffb400";
+        wordpress.style.color = "black";
+        // design.style.color = "black";
+    }
 
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "flex";
@@ -451,10 +488,28 @@ vanilla.addEventListener("click",()=>{
 
 wordpress.addEventListener("click",()=>{
 
-    allProject.style.color = "white";
-    vanilla.style.color = "white";
-    wordpress.style.color = "#ffb400";
+    // allProject.style.color = "white";
+    // vanilla.style.color = "white";
+    // wordpress.style.color = "#ffb400";
     // design.style.color = "white";
+
+    if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
+
+        // this checks if the page is on light mode or dark mode 
+        // portfolio nav list
+        allProject.style.color = "white";
+        vanilla.style.color = "white";
+        wordpress.style.color = "#ffb400";
+        // design.style.color = "white";
+        
+    }else{
+        
+        // portfolio nav list
+        allProject.style.color = "black";
+        vanilla.style.color = "black";
+        wordpress.style.color = "#ffb400";
+        // design.style.color = "black";
+    }
 
     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
         portfolio_wrapper_vanilla[a].style.display = "none";
@@ -478,6 +533,25 @@ wordpress.addEventListener("click",()=>{
 //     vanilla.style.color = "white";
 //     wordpress.style.color = "white";
 //     design.style.color = "#ffb400";
+
+
+// if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
+
+    // this checks if the page is on light mode or dark mode 
+    // portfolio nav list
+    // allProject.style.color = "white";
+    // vanilla.style.color = "white";
+    // wordpress.style.color = "white";
+    // design.style.color = "#ffb400";
+
+    // }else{
+        // portfolio nav list
+        // allProject.style.color = "black";
+        // vanilla.style.color = "black";
+        // wordpress.style.color = "black";
+        // design.style.color = "#ffb400";
+        
+// }
 
 //     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
 //         portfolio_wrapper_vanilla[a].style.display = "none";
