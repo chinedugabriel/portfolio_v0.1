@@ -200,7 +200,7 @@ section>div.row-home>div.col-1{
     height: 300px;
     width: 300px;
     border-radius: 150px;
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
     display: block;
     background-image: url("img/chinedu_gabriel-white-preview.png");
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@ section>div.row-home>div.col-1{
 /* .col-1 ends here for mobile profile picture */
 
 section>div.row-home>div.col-2{
-    border: 1px solid rgb(0, 70, 199);
+    /* border: 1px solid rgb(0, 70, 199); */
     width: 72%;
     height: auto;
     display: flex;
@@ -229,7 +229,7 @@ section>div.row-home>div.col-2>div.text-wrapper{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
 }
 /* div.col-2>div.text-wrapper ends here */
 
@@ -239,7 +239,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
     flex-flow: row nowrap;
     /* align-items:; */
     gap: 20px;
-    border: 1px solid rgb(199, 0, 149);
+    /* border: 1px solid rgb(199, 0, 149); */
     
 }
 /* .colored-text ends here */
@@ -312,7 +312,7 @@ section>div.row-home>div.col-2>div.text-wrapper>button>.icon{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
 }
 
 /* div.row-home ends here */
@@ -328,7 +328,7 @@ section>div.row-about::-webkit-scrollbar{
 section>div.row-about{
     height: 100vh;
     width: 70%;
-    border:1px solid #1900ff;
+    /* border:1px solid #1900ff; */
     overflow-y: scroll;
     gap: 20px;
     display: none;
@@ -336,7 +336,7 @@ section>div.row-about{
 
 /* banner-text starts here */
 div.banner-text{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 99.8%;
     height: 20%;
     /* text-align: center; */ 
@@ -369,7 +369,7 @@ div.banner-text>h1>span{
 
 /* div.row-personal-info starts here */
 section>div.row-about>div.row-personal-info{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 60%;
     display: flex;
     align-items: center;
@@ -379,7 +379,7 @@ section>div.row-about>div.row-personal-info{
 
 /* div.row-personal-info>div.personal-info-wrapper starts here */
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     height: 90%;
     width: 90%;
     display: flex;
@@ -398,7 +398,7 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-i
     flex-flow: row nowrap;
     justify-content: flex-start;
     gap: 90px;
-    border: 1px solid rgb(168, 168, 2);
+    /* border: 1px solid rgb(168, 168, 2); */
     height: 60%;
     width: 90%;
 }
@@ -449,7 +449,7 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.ic
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
 }
 /* div.personal-info-wrapper>button Starts here*/
 
@@ -457,7 +457,7 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>button>.ic
 
 /* div.my-skills start here */
 section>div.row-about>div.my-skills{
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -481,7 +481,7 @@ section>div.row-about>div.my-skills>div.lang-wrapper{
     align-items: center;
     align-content: flex-start;
     gap: 20px;
-    border: 1px solid #ffb400;
+    /* border: 1px solid #ffb400; */
     align-self: center;
     padding: 20px ;
 }
@@ -507,7 +507,7 @@ section>div.row-about>div.edu-exp{
     
 }
 section>div.row-about>div.edu-exp>div.col1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 80%; */
     display: flex;
     align-items: center;
@@ -521,14 +521,14 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     height: auto;
     /* width: 95%; */
     width: auto;
 }
 /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: auto;
     width: 49%;
     display: flex;
@@ -570,7 +570,7 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
     width: 500px;
     height: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -580,7 +580,7 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
     width: 92px;
     border-radius: 25px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -614,7 +614,7 @@ section>div.row-portfolio::-webkit-scrollbar{
 section>div.row-portfolio{
     height: 100vh;
     width: 70%;
-    border:1px solid #1900ff;
+    /* border:1px solid #1900ff; */
     overflow-y: scroll;
     gap: 20px;
     display: none;
@@ -625,12 +625,12 @@ section>div.row-portfolio>div.project-list{
     height: 65px;
     display: flex;
     justify-content: center;
-    border:1px solid #1900ff;
+    /* border:1px solid #1900ff; */
 }
 
 /* div.project-list>ul starts here */
 section>div.row-portfolio>div.project-list>ul{
-    border:1px solid #00c997;
+    /* border:1px solid #00c997; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -645,7 +645,7 @@ section>div.row-portfolio>div.project-list>ul>li:first-child{
 
 
 section>div.row-portfolio>.portfolio-project{
-    border:1px solid #00c997;
+    /* border:1px solid #00c997; */
     height: 120vh;
     height: auto;
     /* width: 90%; */
@@ -654,7 +654,7 @@ section>div.row-portfolio>.portfolio-project{
 }
 
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
-    border:1px solid #4600c9;
+    /* border:1px solid #4600c9; */
     height: auto;
     width: 90%;
     display: flex;
@@ -667,7 +667,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
 }
 /* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
-    border:1px solid #0057c9;
+    /* border:1px solid #0057c9; */
     /* height: auto; */
     height: 300px;
     /* width: 30%; */
@@ -763,7 +763,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     width: 90%;
     height: auto;
     /* overflow: hidden; */
-    border:1px solid #0057c9;
+    /* border:1px solid #0057c9; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1099,7 +1099,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
 @media  (max-width: 1019px) {
 
     section{
-        height: 100vh;
+        height: 99.9vh;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -1199,7 +1199,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         width: 40px ;
         background-color: rgba(187, 187, 187, 0.3);
         border-radius: 20px;
-        border: 1px solid rgb(106, 199, 0);
+        /* border: 1px solid rgb(106, 199, 0); */
     }
     /* individual icon */
     section>div.nav>ul>li>div.icon1{
@@ -1259,7 +1259,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     /* .col-1 ends here for mobile profile picture */
     
     section>div.row-home>div.col-2{
-        border: 1px solid rgb(0, 70, 199);
+        /* border: 1px solid rgb(0, 70, 199); */
         width: 99%;
         height: auto;
         display: flex;
@@ -1277,7 +1277,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
-        border: 1px solid rgb(106, 199, 0);
+        /* border: 1px solid rgb(106, 199, 0); */
         text-align: center;
         padding: 15px 0px;
     }
@@ -1289,7 +1289,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         flex-flow: row nowrap;
         /* align-items:; */
         gap: 10px;
-        border: 1px solid rgb(119, 0, 199);
+        /* border: 1px solid rgb(119, 0, 199); */
         width: 90%;
         padding: 10px 0px;
     }
@@ -1367,7 +1367,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 22px;
-        border: 1px solid rgb(106, 199, 0);
+        /* border: 1px solid rgb(106, 199, 0); */
     }
     
     /* div.row-home ends here */
@@ -1383,7 +1383,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about{
         height: auto;
         width: auto;
-        border:1px solid #1900ff;
+        /* border:1px solid #1900ff; */
         overflow-y: scroll;
         gap: 20px;
         /* display: none; */
@@ -1392,7 +1392,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* === banner-text starts here === */
     div.banner-text{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         width: auto;
         height: 20%;
         /* text-align: center; */ 
@@ -1426,7 +1426,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.row-personal-info starts here */
     section>div.row-about>div.row-personal-info{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: auto;
         width: auto;
         display: flex;
@@ -1437,7 +1437,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.row-personal-info>div.personal-info-wrapper starts here */
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         height: auto;
         width: 95%;
         display: flex;
@@ -1458,7 +1458,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         flex-flow: row nowrap;
         justify-content: flex-start;
         gap: 25px;
-        border: 1px solid rgb(168, 168, 2);
+        /* border: 1px solid rgb(168, 168, 2); */
         height: 39vh;
         width: auto;
     }
@@ -1467,7 +1467,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
         height: auto;
         width: auto;
-        border: 1px solid rgb(2, 115, 168);
+        /* border: 1px solid rgb(2, 115, 168); */
         list-style: none;
         display: flex;
         flex-flow: column nowrap;
@@ -1512,7 +1512,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 22px;
-        border: 1px solid rgb(106, 199, 0);
+        /* border: 1px solid rgb(106, 199, 0); */
     }
     /* div.personal-info-wrapper>button Starts here*/
     
@@ -1520,7 +1520,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.my-skills start here */
     section>div.row-about>div.my-skills{
-        border: 1px solid rgb(106, 199, 0);
+        /* border: 1px solid rgb(106, 199, 0); */
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -1573,7 +1573,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         
     }
     section>div.row-about>div.edu-exp>div.col1{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: auto;
         display: flex;
         align-items: center;
@@ -1588,14 +1588,14 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
         height: auto;
         width: auto;
         gap: 20px;
     }
     /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         width: auto;
         height: auto;
         display: flex;
@@ -1639,7 +1639,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
         width: auto;
         height: auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
@@ -1651,7 +1651,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
         width: 92px;
         border-radius: 25px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1685,7 +1685,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     section>div.row-portfolio{
         height: auto;
         width: auto;
-        border:1px solid #1900ff;
+        /* border:1px solid #1900ff; */
         overflow-y: scroll;
         gap: 20px;
         padding-bottom: 50px;
@@ -1697,12 +1697,12 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         height: 65px;
         display: flex;
         justify-content: center;
-        border:1px solid #1900ff;
+        /* border:1px solid #1900ff; */
     }
     
     /* div.project-list>ul starts here */
     section>div.row-portfolio>div.project-list>ul{
-        border:1px solid #00c997;
+        /* border:1px solid #00c997; */
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -1718,7 +1718,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     
     section>div.row-portfolio>.portfolio-project{
-        border:1px solid #00c997;
+        /* border:1px solid #00c997; */
         height: auto;
         /* width: 90%; */
         display: flex;
@@ -1808,7 +1808,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         width: 90%;
         /* border:1px solid #1900ff; */
         overflow-y: scroll;
-        padding-bottom: 97px;
+        padding-bottom: 57px;
         /* gap: 0px; */
         /* display: none; */
     }
@@ -1828,7 +1828,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
-        height: 55%;
+        height: 50%;
         width: 95%;
         /* gap: 10px; */
     }
