@@ -240,6 +240,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
     /* align-items:; */
     gap: 20px;
     /* border: 1px solid rgb(199, 0, 149); */
+
     
 }
 /* .colored-text ends here */
@@ -1290,7 +1291,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         /* align-items:; */
         gap: 10px;
         /* border: 1px solid rgb(119, 0, 199); */
-        width: 90%;
+        width: 350px;
         padding: 10px 0px;
     }
     /* .colored-text ends here */
@@ -1301,7 +1302,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
         font-size: 150%;
         font-weight: 700;
         text-transform: uppercase;
-        line-height: 20px;
+        line-height: 25px;
         width:auto;
     }
     /* .colored-text h1 ends here */
@@ -1336,7 +1337,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     
     /* div.text-wrapper>p starts here */
     section>div.row-home>div.col-2>div.text-wrapper>p{
-        width: 97%;
+        width: 90%;
         /* font-size: 13px; */
         font-size: 13px;
         line-height: 20px;

@@ -164,7 +164,7 @@ btn_home.addEventListener("click",()=>{
     btn_contact.style.width = "auto";
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
-})
+});
 btn_about.addEventListener("click",()=>{
     // this function calls the about section on the page
     row_home.style.display = "none";
@@ -205,7 +205,7 @@ btn_about.addEventListener("click",()=>{
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
 
-})
+});
 more_btn_about.addEventListener("click",()=>{
     // this function calls the about section on the page
     row_home.style.display = "none";
@@ -246,7 +246,7 @@ more_btn_about.addEventListener("click",()=>{
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
 
-})
+});
 btn_portfolio.addEventListener("click",()=>{
     // this function calls the portfolio section on the page
     row_home.style.display = "none";
@@ -284,7 +284,7 @@ btn_portfolio.addEventListener("click",()=>{
     btn_contact.style.paddingLeft = "0px";
     span_btn_contact.style.display = "none";
 
-})
+});
 btn_contact.addEventListener("click",()=>{
     // this function calls the contact section on the page
     row_home.style.display = "none";
@@ -319,7 +319,7 @@ btn_contact.addEventListener("click",()=>{
     btn_contact.style.width = "125px";
     btn_contact.style.paddingLeft = "20px";
     span_btn_contact.style.display = "block";
-})
+});
 
 
 
@@ -336,7 +336,7 @@ mobile_btn_home.addEventListener("click",()=>{
     row_portfolio.style.display = "none";
     row_contact.style.display = "none";
 
-})
+});
 mobile_btn_about.addEventListener("click",()=>{
     mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
     mobile_btn_about.style.backgroundColor="#ffb400";
@@ -348,7 +348,7 @@ mobile_btn_about.addEventListener("click",()=>{
     row_portfolio.style.display = "none";
     row_contact.style.display = "none";
 
-})
+});
 mobile_btn_portfolio.addEventListener("click",()=>{
     // rgba(187, 187, 187, 0.3)
     mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
@@ -362,7 +362,7 @@ mobile_btn_portfolio.addEventListener("click",()=>{
     row_portfolio.style.display = "block";
     row_contact.style.display = "none";
 
-})
+});
 mobile_btn_contact.addEventListener("click",()=>{
     mobile_btn_home.style.backgroundColor="rgba(187, 187, 187, 0.3)";
     mobile_btn_about.style.backgroundColor="rgba(187, 187, 187, 0.3)";
@@ -375,4 +375,6 @@ mobile_btn_contact.addEventListener("click",()=>{
     row_portfolio.style.display = "none";
     row_contact.style.display = "block";
 
-})
+});
+
+// This section contains the portfolio navigation to select a given type of project
