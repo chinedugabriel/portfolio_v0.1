@@ -887,7 +887,7 @@ section>div.row-contact>div.row-form>.col1{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 450px;
+    height: 70%;
 }
 section>div.row-contact>div.row-form>.col1>h2{
     /* border:1px solid #e688ce; */
@@ -1003,7 +1003,7 @@ div.social-icons>a>.icon-4{
 section>div.row-contact>div.row-form>.col2{
     /* border:1px solid #a80000; */
     width: 50%;
-    height: 90%;
+    height: 70%;
 }
 /* section>div.row-contact>div.row-form>.col2 ends here */
 
@@ -1037,7 +1037,7 @@ section>div.row-contact>div.row-form>.col2>form>input{
 /* div.row-form>.col2>form>textarea starts here */
 section>div.row-contact>div.row-form>.col2>form>textarea{
     width: 93%;
-    height: 170px;
+    height: 130px;
     border-radius: 30px;
     align-self: center;
     border: none;
@@ -1087,7 +1087,7 @@ section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
-    border: 1px solid rgb(106, 199, 0);
+    /* border: 1px solid rgb(106, 199, 0); */
 }
 /* .col2>form>.btn-wrapper>button>.icon ends here */
 /* div.row-form>.col2 ends here */
