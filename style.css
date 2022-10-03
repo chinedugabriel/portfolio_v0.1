@@ -687,6 +687,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
     background-repeat: no-repeat;
     transition-duration: 550ms;
     transition-timing-function: ease-in-out;
+    /* display: none; */
 }
 .portfolio-project>.portfolio-wrapper>.project:hover{
     /* display: flex; */

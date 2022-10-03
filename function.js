@@ -378,3 +378,111 @@ mobile_btn_contact.addEventListener("click",()=>{
 });
 
 // This section contains the portfolio navigation to select a given type of project
+// on click of a list control filter all hard coded project by class list vanilla or wordpress or design
+
+let portfolio_wrapper = document.getElementById("portfolio-wrapper");
+
+let portfolio_wrapper_vanilla = portfolio_wrapper.getElementsByClassName("vanilla");
+let portfolio_wrapper_wordpress = portfolio_wrapper.getElementsByClassName("wordpress");
+// let portfolio_wrapper_design = portfolio_wrapper.getElementsByClassName("design");
+
+// individual list nav
+
+let allProject = document.getElementById("p1");
+let vanilla = document.getElementById("p2");
+let wordpress = document.getElementById("p3");
+// let design = document.getElementById("p4");
+
+allProject.addEventListener("click",()=>{
+    // portfolio_wrapper_vanilla[a].style.display = "flex";
+    // alert("it works");
+
+    allProject.style.color = "#ffb400";
+    vanilla.style.color = "white";
+    wordpress.style.color = "white";
+    // design.style.color = "white";
+
+    for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
+        portfolio_wrapper_vanilla[a].style.display = "flex";
+        
+    }
+    for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
+        portfolio_wrapper_wordpress[v].style.display = "flex";
+        
+    }
+    // for(d = 0; d < portfolio_wrapper_design.length; d++){
+    //     portfolio_wrapper_design[d].style.display = "flex";
+        
+    // }
+});
+
+vanilla.addEventListener("click",()=>{
+
+    allProject.style.color = "white";
+    vanilla.style.color = "#ffb400";
+    wordpress.style.color = "white";
+    // design.style.color = "white";
+
+    for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
+        portfolio_wrapper_vanilla[a].style.display = "flex";
+        
+    }
+    for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
+        portfolio_wrapper_wordpress[v].style.display = "none";
+        
+    }
+    // for(d = 0; d < portfolio_wrapper_design.length; d++){
+    //     portfolio_wrapper_design[d].style.display = "none";
+        
+    // }
+});
+
+wordpress.addEventListener("click",()=>{
+
+    allProject.style.color = "white";
+    vanilla.style.color = "white";
+    wordpress.style.color = "#ffb400";
+    // design.style.color = "white";
+
+    for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
+        portfolio_wrapper_vanilla[a].style.display = "none";
+        
+    }
+    for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
+        portfolio_wrapper_wordpress[v].style.display = "flex";
+        
+    }
+    // for(d = 0; d < portfolio_wrapper_design.length; d++){
+    //     portfolio_wrapper_design[d].style.display = "none";
+        
+    // }
+});
+
+// uncomment here when you have added some design projects
+
+// design.addEventListener("click",()=>{
+
+//     allProject.style.color = "white";
+//     vanilla.style.color = "white";
+//     wordpress.style.color = "white";
+//     design.style.color = "#ffb400";
+
+//     for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
+//         portfolio_wrapper_vanilla[a].style.display = "none";
+//         // il_list_Li2[i].style.color = "black";
+        
+//     }
+//     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
+//         portfolio_wrapper_wordpress[v].style.display = "none";
+//         // il_list_Li2[i].style.color = "black";
+        
+//     }
+//     for(d = 0; d < portfolio_wrapper_design.length; d++){
+//         portfolio_wrapper_design[d].style.display = "flex";
+//         // il_list_Li2[i].style.color = "black";
+//         if( portfolio_wrapper_design.length == 0){
+//             alert("Empty!");
+//         }
+        
+//     }
+// });
