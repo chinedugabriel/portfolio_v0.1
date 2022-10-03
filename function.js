@@ -48,7 +48,13 @@ function changeMode(){
             bodyTag.style.color = 'black';
             btn_home_about.style.color = 'black';
 
-                //  this loops through all the li in the ul#list1 & ul#list2 and changes there text color to black
+            // portfolio nav list
+            allProject.style.color = "black";
+            vanilla.style.color = "black";
+            wordpress.style.color = "black";
+            // design.style.color = "black";
+
+            //  this loops through all the li in the ul#list1 & ul#list2 and changes there text color to black
             for(i = 0; i < il_list_Li.length; i++){
                 il_list_Li[i].style.color = "black";
                 il_list_Li2[i].style.color = "black";
@@ -69,6 +75,12 @@ function changeMode(){
             bodyTag.style.backgroundColor = 'black';
             bodyTag.style.color = 'white';
             btn_home_about.style.color = 'white';
+
+            // portfolio nav list
+            allProject.style.color = "white";
+            vanilla.style.color = "white";
+            wordpress.style.color = "white";
+            // design.style.color = "white";
           
 
             //  this loops through all the li in the ul#list1 & ul#list2 and changes there text color to white
