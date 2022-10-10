@@ -703,16 +703,16 @@
                     </div>
                 </div>
                 <div class="col2">
-                    <form action="">
+                    <form action="post" data-netlify="true" name="contact">
                         <!-- <div class="form-group"> -->
-                            <input type="text" placeholder="YOUR NAME" id="">
-                            <input type="text" placeholder="YOUR EMAIL" id="">
+                            <input type="text" placeholder="YOUR NAME" name="name">
+                            <input type="email" placeholder="YOUR EMAIL" name="email">
                         <!-- </div> -->
                         <input type="text" placeholder="YOUR SUBJECT" id="">
-                        <textarea id="" placeholder="YOUR MESSAGE">
+                        <textarea name="message" placeholder="YOUR MESSAGE">
                         </textarea>
                         <div class="btn-wrapper">
-                            <button id="btn-sendMessage">
+                            <button id="btn-sendMessage" type="submit" value="send">
                                 SEND MESSAGE <div class="icon"></div>
                             </buttoni>
                         </div>
