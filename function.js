@@ -608,17 +608,18 @@ bodyTag.addEventListener("mouseout", ()=>{
 
 // this feature hides and shows the navigation when the user scrolls up the navigation becomes visible.
 
-// this covers the complete navigation 
-let mobileNav = document.getElementById("mobile-nav");
+// this covers the complete navigation for mobile
 
-let prevScrollpos = window.pageYOffset;
+// let mobileNav = document.getElementById("mobileNav");
 
-window.addEventListener("scroll" ,()=> {
-let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    mobileNav.style.bottom = "0";
-  } else {
-    mobileNav.style.bottom = "-400px";
-  }
-  prevScrollpos = currentScrollPos;
-});
+// let prevScrollpos = window.pageYOffset;
+
+// window.addEventListener("scroll" ,()=> {
+// let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     mobileNav.style.bottom = "0";
+//   } else {
+//     mobileNav.style.bottom = "-400px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// });

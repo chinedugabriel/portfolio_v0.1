@@ -1134,7 +1134,10 @@ button:hover{
 
 /* mobile version starts here */
 @media  (max-width: 1019px) {
-
+    body{
+        height: auto;
+        width: auto;
+    }
     section{
         height: 99.9vh;
         display: flex;
