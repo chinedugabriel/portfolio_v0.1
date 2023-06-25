@@ -2067,16 +2067,18 @@ div.social-icons>a>div{
 
     div.mobile-nav{
         /* border: 1px solid red; */
-        width: 99.9%;
+        border-radius: 30rem;
+        /* width: 99.9%; */
+        width: 90%;
         height: 60px;
         position: absolute;
         /* top: 97.7%; */
-        bottom: -31px;
+        bottom: 0px;
         right: 50%;
         left: 50%;
         /* margin-top: auto; */
         transform: translate(-50%, -50%);
-        background-color: #222222;
+        background-color: #22222280;
         display: block;
         z-index: 99;
     }

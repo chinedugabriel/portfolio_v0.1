@@ -604,3 +604,21 @@ bodyTag.addEventListener("mouseout", ()=>{
     cursor.setAttribute("style", "display: 'none;'")
 
 })
+
+
+// this feature hides and shows the navigation when the user scrolls up the navigation becomes visible.
+
+// this covers the complete navigation 
+let mobileNav = document.getElementById("mobile-nav");
+
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll" ,()=> {
+let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    mobileNav.style.bottom = "0";
+  } else {
+    mobileNav.style.bottom = "-400px";
+  }
+  prevScrollpos = currentScrollPos;
+});
