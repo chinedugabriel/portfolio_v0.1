@@ -38,11 +38,11 @@ body{
 /*custom cursor ends here*/
 
 section{
-    height: 99vh;
-    display: flex;
+    /* height: 99vh; */
+    /* display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* padding-bottom: 50px; */
     /* position: relative; */
 }
@@ -218,7 +218,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
     /*undo here when you are ready*/
 }
 
@@ -239,8 +239,8 @@ section>div.row-home>div.col-1{
 
 section>div.row-home>div.col-2{
     /* border: 1px solid rgb(0, 70, 199); */
-    width: 72%;
-    height: auto;
+    /* width: 72%; */
+    /* height: auto; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -292,10 +292,10 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text h1>span{
 /* .colored-text h2 ends here */
 
 /* little line starts here */
-section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
+/* section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
     height: 49px;
     width: 45px;
-    /* background-color: #1900ff; */
+    background-color: #1900ff;
     display: flex;
     padding-top: 3px;
     align-items: center;
@@ -305,7 +305,7 @@ section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line>.line
     width: 45px;
     background-color: #ffb400;
     border-radius: 2.5px;
-}
+} */
 /* little line ends here */
 
 /* div.text-wrapper>p starts here */
@@ -355,11 +355,13 @@ section>div.row-about::-webkit-scrollbar{
 /* section>div.row-about starts here */
 section>div.row-about{
     height: 100vh;
-    width: 70%;
-    /* border:1px solid #1900ff; */
+    /* width: 70%; */
+    border:1px solid #1900ff;
     overflow-y: scroll;
-    gap: 20px;
-    display: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+    /* display: none; */
 }
 
 /* banner-text starts here */
@@ -398,7 +400,7 @@ div.banner-text>h1>span{
 /* div.row-personal-info starts here */
 section>div.row-about>div.row-personal-info{
     /* border: 1px solid red; */
-    height: 60%;
+    /* height: 60%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,8 +410,8 @@ section>div.row-about>div.row-personal-info{
 /* div.row-personal-info>div.personal-info-wrapper starts here */
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
     /* border: 1px solid yellow; */
-    height: 90%;
-    width: 90%;
+    /* height: 90%;
+    width: 90%; */
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
@@ -427,23 +429,26 @@ section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-i
     justify-content: flex-start;
     gap: 90px;
     /* border: 1px solid rgb(168, 168, 2); */
-    height: 60%;
-    width: 90%;
+    /* height: 60%; */
+    /* width: 90%; */
 }
 /*div.personal-info-wrapper>div.list-info ends here*/
 
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
-    height: 100%;
+    /* height: 100%; */
     /* border: 1px solid rgb(2, 115, 168); */
     list-style: none;
     display: flex;
-    flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
     justify-content: space-around;
+    gap: 50px;
 }
 
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li{
     font-weight: 400;
     color: white;
+    display: flex;
+    flex-flow: column;
 }
 section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li>span{
     /* cursor: none; */
@@ -1363,10 +1368,10 @@ display: none;
     /* .colored-text h2 ends here */
     
     /* little line starts here */
-    section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
+    /* section>div.row-home>div.col-2>div.text-wrapper>.colored-text>.little-line{
         height: 49px;
         width: 45px;
-        /* background-color: #1900ff; */
+        background-color: #1900ff;
         display: flex;
         padding-top: 3px;
         align-items: center;
@@ -1377,7 +1382,7 @@ display: none;
         width: 45px;
         background-color: #ffb400;
         border-radius: 2.5px;
-    }
+    } */
     /* little line ends here */
     
     /* div.text-wrapper>p starts here */
@@ -1475,9 +1480,10 @@ display: none;
         /* border: 1px solid red; */
         height: auto;
         width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        /* align-items: center;
+        justify-content: center; */
+        padding: 20px;
     }
     /* div.row-personal-info ends here */
     
@@ -1485,7 +1491,7 @@ display: none;
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper{
         /* border: 1px solid yellow; */
         height: auto;
-        width: 95%;
+        /* width: 95%; */
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
@@ -1505,7 +1511,7 @@ display: none;
         justify-content: flex-start;
         gap: 25px;
         /* border: 1px solid rgb(168, 168, 2); */
-        height: 39vh;
+        /* height: 39vh; */
         width: auto;
     }
     /*div.personal-info-wrapper>div.list-info ends here*/
@@ -1518,6 +1524,7 @@ display: none;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
+        font-size: 20px;
     }
     
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li{
@@ -1586,8 +1593,8 @@ display: none;
     section>div.row-about>div.my-skills>div.lang-wrapper{
         display: flex;
         flex-flow: row wrap;
-        width: 60%;
-        height: 60%;
+        width: 90%;
+        height: auto;
         justify-content: space-evenly;
         align-items: center;
         align-content: space-evenly;
@@ -1629,6 +1636,7 @@ display: none;
     }
     section>div.row-about>div.edu-exp>div.col1>h1{
         font-size: 21px;
+        text-align: center;
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper{
         display: flex;
@@ -1658,6 +1666,7 @@ display: none;
         flex-flow: column nowrap;
         /* justify-content: center; */
         align-items: center;
+        display: none;
     }
     /* div.wrapper>div.row>div.icon-wrapper ends here */
     
@@ -1698,14 +1707,13 @@ display: none;
         width: 92px;
         border-radius: 25px;
         /* border: 1px solid red; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
         font-size: 10px;
         /* background-color: #8888883b; */
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
         font-size: 16px;
+        color: #ffb400;
     }
     section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
         font-size: 13px;
