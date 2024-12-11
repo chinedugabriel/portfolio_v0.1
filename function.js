@@ -21,9 +21,9 @@ let banner3 = document.getElementById("contact-banner-span");
 let ul_list1 = document.getElementById("list1");
 // the child list items (li) from ul#list1
 let il_list_Li = ul_list1.querySelectorAll("li");
-let ul_list2 = document.getElementById("list2");
+// let ul_list2 = document.getElementById("list2");
 // the child list items (li) from ul#list2
-let il_list_Li2 = ul_list2.querySelectorAll("li");
+// let il_list_Li2 = ul_list2.querySelectorAll("li");
 
 // btn from list_info to download CV
 let btn_downloadCV = document.getElementById("btn-download-cv");
@@ -72,7 +72,7 @@ function changeMode(){
             //  this loops through all the li in the ul#list1 & ul#list2 and changes there text color to black
             for(i = 0; i < il_list_Li.length; i++){
                 il_list_Li[i].style.color = "black";
-                il_list_Li2[i].style.color = "black";
+                // il_list_Li2[i].style.color = "black";
                 
             }
 
@@ -101,7 +101,7 @@ function changeMode(){
             //  this loops through all the li in the ul#list1 & ul#list2 and changes there text color to white
             for(i = 0; i < il_list_Li.length; i++){
                 il_list_Li[i].style.color = "white";
-                il_list_Li2[i].style.color = "white";
+                // il_list_Li2[i].style.color = "white";
             }
 
             btn_downloadCV.style.color = "white";
