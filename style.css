@@ -1164,7 +1164,7 @@ button:hover{
         width: auto;
     }
     section{
-        height: 99.9vh;
+        height: auto;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -1304,7 +1304,7 @@ display: none;
     /* div.row-home starts here */
     section>div.row-home{
         width: auto;
-        height: auto;
+        height: 100dvh;
         /* display: flex; */
         flex-flow: column nowrap;
         justify-content: center;
@@ -1347,7 +1347,7 @@ display: none;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
         /* border: 1px solid rgb(106, 199, 0); */
         text-align: center;
         padding: 15px 0px;
@@ -1358,7 +1358,8 @@ display: none;
     section>div.row-home>div.col-2>div.text-wrapper>.colored-text{
         display: flex;
         flex-flow: row nowrap;
-        /* align-items:; */
+        /* align-items:center; */
+        justify-content: center;
         gap: 10px;
         /* border: 1px solid rgb(119, 0, 199); */
         width: 350px;
@@ -1374,6 +1375,7 @@ display: none;
         text-transform: uppercase;
         line-height: 25px;
         width:auto;
+        text-align: center;
     }
     /* .colored-text h1 ends here */
     
@@ -2108,7 +2110,7 @@ div.social-icons>a>div{
         height: 60px;
         position: absolute;
         /* top: 97.7%; */
-        bottom: 30px;
+        bottom: 35px;
         right: 50%;
         left: 50%;
         /* margin-top: auto; */
