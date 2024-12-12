@@ -361,7 +361,7 @@ section>div.row-about{
     overflow-y: scroll;
     /* display: flex; */
     flex-flow: column nowrap;
-    gap: 50px;
+    gap: 70px;
     display: none;
 }
 
@@ -551,17 +551,18 @@ section>div.row-about>div.edu-exp>div.col1{
     justify-content: space-evenly;
     flex-flow: column ;
     /* height: 60vh; */
-    padding: 20px;
+    padding: 25px 10px;
     gap: 25px;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     /* border: 1px solid purple; */
-    height: auto;
-    /* width: 95%; */
-    width: auto;
+    /* gap: 10px; */
+    /* height: auto; */
+    width: 65%;
+    /* width: auto; */
 }
 /* div.edu-exp>div.col1>div.wrapper>div.row starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
@@ -572,6 +573,7 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 }
 
 /* div.wrapper>div.row>div.icon-wrapper starts here */
@@ -596,7 +598,7 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>
 
 /* div.icon-wrapper>div.line starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>div.line{
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: #ffffff4d;
     width: 2px;
     height: 98px;
     
@@ -605,12 +607,14 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.icon-wrapper>
 
 /* div.col1>div.wrapper>div.row>div.content starts here */
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content{
-    width: 500px;
-    height: 150px;
+    /* width: 500px; */
+    /* height: 150px; */
     /* border: 1px solid red; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    gap: 10px;
+    
 }
 /* div.col1>div.wrapper>div.row>div.content ends here */
 
@@ -621,11 +625,12 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>p{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
-    background-color: #8888883b;
+    font-size: 12px;
+    background-color: #ffffff4d;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4{
     font-size: 16px;
+    margin-bottom: 10px;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>h4>span{
     font-size: 13px;
@@ -634,6 +639,7 @@ section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.t
 
 section>div.row-about>div.edu-exp>div.col1>div.wrapper>div.row>div.content>div.text-wrapper>p{
     font-size: 13px;
+    line-height: 20px;
 }
 
 /* div.edu-exp>div.col1>div.wrapper>div.row ends here */
@@ -649,13 +655,14 @@ section>div.row-portfolio::-webkit-scrollbar{
 }
 
 section>div.row-portfolio{
-    /* height: 100vh; */
-    height: auto;
+    height: 100dvh;
+    /* height: auto; */
     /* width: 70%; */
     /* border:1px solid #1900ff; */
-    /* overflow-y: scroll; */
-    /* gap: 20px; */
-    padding: 10px;
+    display: flex;
+    overflow-y: scroll;
+    gap: 30px;
+    /* padding: 10px; */
     display: none;
 }
 
@@ -664,6 +671,7 @@ section>div.row-portfolio>div.project-list{
     height: 65px;
     display: flex;
     justify-content: center;
+    gap: 20px;
     /* border:1px solid #1900ff; */
 }
 
@@ -686,10 +694,11 @@ section>div.row-portfolio>div.project-list>ul>li:first-child{
 section>div.row-portfolio>.portfolio-project{
     /* border:1px solid #00c997; */
     /* height: 120vh; */
-    /* height: auto; */
+    height: auto;
     /* width: 90%; */
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
 }
 
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
@@ -703,6 +712,7 @@ section>div.row-portfolio>.portfolio-project>.portfolio-wrapper{
     align-content: space-evenly;
     /* padding: 20px 0px; */
     row-gap: 35px;
+    
 }
 /* .portfolio-wrapper>.project starts here */
 section>div.row-portfolio>.portfolio-project>.portfolio-wrapper>.project{
@@ -904,8 +914,8 @@ section>div.row-contact::-webkit-scrollbar{
     display: none;
 }
 section>div.row-contact{
-    height: 100vh;
-    width: 70%;
+    height: 100dvh;
+    /* width: 70%; */
     /* border:1px solid #1900ff; */
     overflow-y: scroll;
     /* gap: 0px; */
@@ -916,10 +926,13 @@ section>div.row-contact>div.row-form{
     display: flex;
     flex-flow:  row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     /* border:1px solid #00ffdd; */
-    height: 80%;
-    /* margin-top: 2%; */
+    /* height: 80%; */
+    margin-top: 2%;
+    padding: 45px 10px;
+    width: 98%;
+    gap: 10px;
 }
 
 section>div.row-contact>div.row-form>.col1{
@@ -927,14 +940,17 @@ section>div.row-contact>div.row-form>.col1{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 70%;
+    gap: 20px;
+    padding-bottom: 32px;
+    /* height: 70%; */
 }
 section>div.row-contact>div.row-form>.col1>h2{
     /* border:1px solid #e688ce; */
     /* font-weight: 500; */
 }
 section>div.row-contact>div.row-form>.col1>p{
-    width: 350px;
+    /* width: 350px; */
+    width: 83%;
     height: 77px;
     line-height: 20px;
     font-size: 15px;
@@ -1008,14 +1024,14 @@ div.social-icons{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     /* align-content: flex-start; */
     flex-flow: row nowrap;
     padding: 5px 0px;
 }
 div.social-icons>a>div{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     /* border: 1px solid white; */
     border-radius: 20px;
     background-position: center;
@@ -1042,8 +1058,8 @@ div.social-icons>a>.icon-4{
 /* section>div.row-contact>div.row-form>.col2 starts here */
 section>div.row-contact>div.row-form>.col2{
     /* border:1px solid #a80000; */
-    width: 50%;
-    height: 70%;
+    width: 35%;
+    /* height: 70%; */
 }
 /* section>div.row-contact>div.row-form>.col2 ends here */
 
@@ -1052,10 +1068,11 @@ section>div.row-contact>div.row-form>.col2{
 section>div.row-contact>div.row-form>.col2>form{
     /* border:1px solid #a80000; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    gap: 20px;
 }
 /* div.row-form>.col2 ends here */
 
@@ -1064,7 +1081,7 @@ section>div.row-contact>div.row-form>.col2>form{
 section>div.row-contact>div.row-form>.col2>form>input{
     width: 93%;
     height: 44px;
-    border-radius: 30px;
+    border-radius: 10px;
     align-self: center;
     border: none;
     outline: none;
@@ -1078,7 +1095,7 @@ section>div.row-contact>div.row-form>.col2>form>input{
 section>div.row-contact>div.row-form>.col2>form>textarea{
     width: 93%;
     height: 130px;
-    border-radius: 30px;
+    border-radius: 10px;
     align-self: center;
     border: none;
     outline: none;
@@ -1521,12 +1538,12 @@ display: none;
     
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul{
         height: auto;
-        width: auto;
+        width: 100%;
         /* border: 1px solid rgb(2, 115, 168); */
         list-style: none;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
+        flex-flow: column wrap;
+        /* justify-content: space-around; */
         font-size: 20px;
     }
     
@@ -1535,6 +1552,8 @@ display: none;
         color: white;
         width: auto;
         font-size: 75%;
+        /* border: 1px solid rgb(16, 168, 2); */
+        
     }
     section>div.row-about>div.row-personal-info>div.personal-info-wrapper>div.list-info>ul>li>span{
         /* cursor: none; */
@@ -1861,11 +1880,11 @@ display: none;
         display: none;
     }
     section>div.row-contact{
-        height: auto;
+        height: 100%;
         width: 90%;
         /* border:1px solid #1900ff; */
         overflow-y: scroll;
-        padding-bottom: 57px;
+        padding-bottom: 10px;
         /* gap: 0px; */
         /* display: none; */
     }
@@ -1876,8 +1895,9 @@ display: none;
         align-items: center;
         justify-content: space-around;
         /* border:1px solid #00ffdd; */
-        height: 165%;
+        /* height: 165%; */
         /* margin-top: 2%; */
+        gap: 20px;
     }
     
     section>div.row-contact>div.row-form>.col1{
@@ -1887,7 +1907,7 @@ display: none;
         justify-content: space-evenly;
         height: 50%;
         width: 95%;
-        /* gap: 10px; */
+        gap: 30px;
     }
     section>div.row-contact>div.row-form>.col1>h2{
         /* border:1px solid #e688ce; */
@@ -1896,8 +1916,8 @@ display: none;
     section>div.row-contact>div.row-form>.col1>p{
         width: 95%;
         height: auto;
-        line-height: 20px;
-        font-size: 15px;
+        line-height: 25px;
+        font-size: 20px;
         /* border:1px solid #ffffff; */
     }
     
@@ -1966,16 +1986,16 @@ display: none;
 div.social-icons{
     /* border: 1px solid white; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     flex-flow: row nowrap;
     padding: 5px 0px;
 }
 div.social-icons>a>div{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     /* border: 1px solid white; */
-    border-radius: 20px;
+    border-radius: 50%;
     background-position: center;
     background-size: 20px;
     background-repeat: no-repeat;
@@ -1987,7 +2007,7 @@ div.social-icons>a>div{
     section>div.row-contact>div.row-form>.col2{
         /* border:1px solid #a80000; */
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
     }
 
     /* section>div.row-contact>div.row-form>.col2 ends here */
@@ -1997,7 +2017,7 @@ div.social-icons>a>div{
     section>div.row-contact>div.row-form>.col2>form{
         /* border:1px solid #a80000; */
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
@@ -2011,7 +2031,7 @@ div.social-icons>a>div{
     section>div.row-contact>div.row-form>.col2>form>input{
         width: 90%;
         height: 40px;
-        border-radius: 30px;
+        /* border-radius: 30px; */
         align-self: center;
         border: none;
         outline: none;
@@ -2025,7 +2045,7 @@ div.social-icons>a>div{
     section>div.row-contact>div.row-form>.col2>form>textarea{
         width: 90%;
         height: 100px;
-        border-radius: 30px;
+        /* border-radius: 30px; */
         align-self: center;
         border: none;
         outline: none;
@@ -2049,11 +2069,12 @@ div.social-icons>a>div{
     section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         border: 1px solid #ffb400;
         background-color: transparent;
         border-radius: 25px;
-        width: 190px;
+        width: auto;
+        gap: 10px;
         padding-left: 10px;
         text-align: center;
         color: white;
@@ -2066,10 +2087,10 @@ div.social-icons>a>div{
     
     /* .col2>form>.btn-wrapper>button>.icon starts here */
     section>div.row-contact>div.row-form>.col2>form>.btn-wrapper>button>.icon{
-        height: 40px;
-        width: 40px ;
+        height: 35px;
+        width: 35px ;
         background-color: #ffb400;
-        border-radius: 20px;
+        border-radius: 50%
         background-image: url("img/file_download_icon.png");
         background-repeat: no-repeat;
         background-position: center;
@@ -2087,7 +2108,7 @@ div.social-icons>a>div{
         height: 60px;
         position: absolute;
         /* top: 97.7%; */
-        bottom: 0px;
+        bottom: 30px;
         right: 50%;
         left: 50%;
         /* margin-top: auto; */
