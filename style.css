@@ -219,7 +219,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
     /*undo here when you are ready*/
 }
 
@@ -659,11 +659,11 @@ section>div.row-portfolio{
     /* height: auto; */
     /* width: 70%; */
     /* border:1px solid #1900ff; */
-    display: flex;
+    /* display: flex; */
     overflow-y: scroll;
     gap: 30px;
     /* padding: 10px; */
-    display: none;
+    /* display: none; */
 }
 
 section>div.row-portfolio>div.project-list{
