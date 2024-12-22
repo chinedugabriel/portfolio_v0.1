@@ -219,7 +219,7 @@ section>div.row-home{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
     /*undo here when you are ready*/
 }
 
@@ -361,7 +361,8 @@ section>div.row-about{
     overflow-y: scroll;
     /* display: flex; */
     flex-flow: column nowrap;
-    gap: 70px;
+    gap: 65px;
+    /* gap: 300px; */
     display: none;
 }
 
@@ -663,7 +664,7 @@ section>div.row-portfolio{
     overflow-y: scroll;
     gap: 30px;
     /* padding: 10px; */
-    /* display: none; */
+    display: none;
 }
 
 section>div.row-portfolio>div.project-list{

@@ -197,7 +197,7 @@ btn_home.addEventListener("click",()=>{
 btn_about.addEventListener("click",()=>{
     // this function calls the about section on the page
     row_home.style.display = "none";
-    row_about.style.display = "block";
+    row_about.style.display = "flex";
     row_portfolio.style.display = "none";
     row_contact.style.display = "none";
     btn_home.style.width = "40px";
@@ -238,7 +238,7 @@ btn_about.addEventListener("click",()=>{
 more_btn_about.addEventListener("click",()=>{
     // this function calls the about section on the page
     row_home.style.display = "none";
-    row_about.style.display = "block";
+    row_about.style.display = "flex";
     row_portfolio.style.display = "none";
     row_contact.style.display = "none";
     btn_home.style.width = "40px";
