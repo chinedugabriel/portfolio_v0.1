@@ -542,7 +542,7 @@ section>div.row-about>div.my-skills>div.lang-wrapper>div.lan{
 
 section>div.row-about>div.edu-exp{
     /* height: 70%; */
-    
+    padding-bottom:35px;
 }
 section>div.row-about>div.edu-exp>div.col1{
     /* border: 1px solid red; */
@@ -552,7 +552,7 @@ section>div.row-about>div.edu-exp>div.col1{
     justify-content: space-evenly;
     flex-flow: column ;
     /* height: 60vh; */
-    padding: 25px 10px;
+    padding: 10px;
     gap: 25px;
 }
 section>div.row-about>div.edu-exp>div.col1>div.wrapper{
