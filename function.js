@@ -45,14 +45,16 @@ let portfolio_wrapper = document.getElementById("portfolio-wrapper");
 
 let portfolio_wrapper_vanilla = portfolio_wrapper.getElementsByClassName("vanilla");
 let portfolio_wrapper_wordpress = portfolio_wrapper.getElementsByClassName("wordpress");
+let portfolio_wrapper_laravel = portfolio_wrapper.getElementsByClassName("laravel");
 // let portfolio_wrapper_design = portfolio_wrapper.getElementsByClassName("design");
 
-// individual list nav
+// individual list nav veriable for filtering projects
 
 let allProject = document.getElementById("p1");
 let vanilla = document.getElementById("p2");
 let wordpress = document.getElementById("p3");
-// let design = document.getElementById("p4");
+let laravel = document.getElementById("p4");
+// let design = document.getElementById("p5");
 
 
 // function to switch mode from light to dark mode
@@ -422,6 +424,7 @@ allProject.addEventListener("click",()=>{
         allProject.style.color = "#ffb400";
         vanilla.style.color = "white";
         wordpress.style.color = "white";
+        laravel.style.color = "white";
         // design.style.color = "white";
 
     }else{
@@ -429,6 +432,7 @@ allProject.addEventListener("click",()=>{
         allProject.style.color = "#ffb400";
         vanilla.style.color = "black";
         wordpress.style.color = "black";
+        laravel.style.color = "black";
         // design.style.color = "black";
 
     }
@@ -441,6 +445,12 @@ allProject.addEventListener("click",()=>{
     // this loops through all the project that has the class wordpress and gives all wordpress class display flex
     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
         portfolio_wrapper_wordpress[v].style.display = "flex";
+        
+    }
+    // this loops through all the project that has the class laravel and gives all laravel class display flex
+
+    for(l = 0; l < portfolio_wrapper_laravel.length; l++){
+        portfolio_wrapper_laravel[l].style.display = "flex";
         
     }
     // this loops through all the project that has the class design and gives all design class display flex
@@ -465,6 +475,7 @@ vanilla.addEventListener("click",()=>{
         allProject.style.color = "white";
         vanilla.style.color = "#ffb400";
         wordpress.style.color = "white";
+        laravel.style.color = "white";
         // design.style.color = "white";
 
     }else{
@@ -473,6 +484,7 @@ vanilla.addEventListener("click",()=>{
         allProject.style.color = "black";
         vanilla.style.color = "#ffb400";
         wordpress.style.color = "black";
+        laravel.style.color = "black";
         // design.style.color = "black";
     }
 
@@ -484,6 +496,12 @@ vanilla.addEventListener("click",()=>{
         // this loops through all the project that has the class wordpress and gives all wordpress class display none
     for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
         portfolio_wrapper_wordpress[v].style.display = "none";
+        
+    }
+
+    // this loops through all the project that has the class laravel and gives all laravel class display none
+    for(l = 0; l < portfolio_wrapper_laravel.length; l++){
+        portfolio_wrapper_laravel[l].style.display = "none";
         
     }
 
@@ -508,6 +526,7 @@ wordpress.addEventListener("click",()=>{
         allProject.style.color = "white";
         vanilla.style.color = "white";
         wordpress.style.color = "#ffb400";
+        laravel.style.color = "white";
         // design.style.color = "white";
         
     }else{
@@ -516,6 +535,7 @@ wordpress.addEventListener("click",()=>{
         allProject.style.color = "black";
         vanilla.style.color = "black";
         wordpress.style.color = "#ffb400";
+        laravel.style.color = "black";
         // design.style.color = "black";
     }
 
@@ -531,6 +551,12 @@ wordpress.addEventListener("click",()=>{
         
     }
 
+    // this loops through all the project that has the class laravel and gives all laravel class display none
+
+    for(l = 0; l < portfolio_wrapper_laravel.length; l++){
+        portfolio_wrapper_laravel[l].style.display = "none";
+        
+    }
     // this loops through all the project that has the class design and gives all design class display none
 
     // for(d = 0; d < portfolio_wrapper_design.length; d++){
@@ -538,6 +564,53 @@ wordpress.addEventListener("click",()=>{
         
     // }
 });
+
+// uncomment here when you have added some design projects
+
+laravel.addEventListener("click",()=>{
+
+    // allProject.style.color = "white";
+    // vanilla.style.color = "white";
+    // wordpress.style.color = "white";
+    // laravel.style.color = "#ffb400";
+
+
+if(btn_darkMode.style.backgroundImage == 'url("img/wb_sunny_icon.png")'){
+
+    // this checks if the page is on light mode or dark mode 
+    // portfolio nav list
+    allProject.style.color = "white";
+    vanilla.style.color = "white";
+    wordpress.style.color = "white";
+    laravel.style.color = "#ffb400";
+
+    }else{
+        // portfolio nav list
+        allProject.style.color = "black";
+        vanilla.style.color = "black";
+        wordpress.style.color = "black";
+        laravel.style.color = "#ffb400";
+        
+}
+
+    for(a = 0; a < portfolio_wrapper_vanilla.length; a++){
+        portfolio_wrapper_vanilla[a].style.display = "none";
+        // il_list_Li2[i].style.color = "black";
+        
+    }
+    for(v = 0; v < portfolio_wrapper_wordpress.length; v++){
+        portfolio_wrapper_wordpress[v].style.display = "none";
+        // il_list_Li2[i].style.color = "black";
+        
+    }
+    for(l = 0; l < portfolio_wrapper_laravel.length; l++){
+        portfolio_wrapper_laravel[l].style.display = "flex";
+        // il_list_Li2[i].style.color = "black";
+        
+    }
+});
+
+
 
 // uncomment here when you have added some design projects
 
